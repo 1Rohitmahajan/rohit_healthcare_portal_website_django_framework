@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block body %} 
+<head> <title>
+	HDFCERGO Health Insurance
+</title><b class="formSubhead">Quick Quote for Health Insurance.</b>
+ <div class="input-field">
+     <form class="login-form" action="/insurance " method="post">
+     {% csrf_token %}
+     <input name="name" type="text"  id="name" autocomplete="off" placeholder="Name" onkeypress="return isNumericKey(event)">
+     <div class="form-error" id="divEName">
+
+     </div></div>
+     <div class="input-field"><input name="email" id="email" type="text" class="validate
+                alphabateOnly" maxlength="60" id="txtEmail" autocomplete="off" placeholder="Email">
+                <div class="form-error" id="div1">
+                </div></div><div class="clearfix trip">
+                </div><div class="input-field">
+                    <input name="phone" id="phone" type="tel" class="validate alphabateOnly" maxlength="10
+               " id="txtMobno" autocomplete="off" placeholder="Mobile Number" onkeypress="return isNumberKey(event)">
+               <span class="inText"><a id="SendOtp" style="display:none;">Send OTP</a></span>
+ <div class="form-error" id="Div2"></div><div class="clearfix">
+
+ </div></div>
+ <div class="clearfix">
+
+ </div><div class="input-field">
+     
+ {% endblock body%}

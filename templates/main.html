@@ -1,0 +1,1611 @@
+{% extends 'dashboard.html' %}
+{% block body %}
+
+<head>
+<meta charset="utf-8">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="alternate" type="application/rss+xml" title="Ministry of Health and Family Welfare | GOI RSS" href="https://main.mohfw.gov.in/rss.xml">
+<link rel="shortcut icon" href="https://main.mohfw.gov.in/sites/all/themes/dhfw/favicon.ico" type="image/png">
+<title>Home | Ministry of Health and Family Welfare | GOI</title>
+
+<meta name="title" content="Home | Ministry of Health and Family Welfare | GOI">
+<meta name="lang" content="en">
+<meta name="MobileOptimized" content="width">
+<meta name="HandeldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="mohfw, ministry of health, health and family welfare, ministry of health and family welfare, naco, department of ayush, national">
+<meta name="description" content="MInistry of Health and Family Welfare is a Ministry under the Government of India and is charged with formulation, implementatio">
+  <style>
+@import url("https://main.mohfw.gov.in/modules/system/system.base.css?ray2z4");
+</style>
+<style>
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/calendar/css/calendar_multiday.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/date/date_api/date.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/date/date_popup/themes/datepicker.1.7.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/date/date_repeat_field/date_repeat_field.css?ray2z4");
+@import url("https://main.mohfw.gov.in/modules/field/theme/field.css?ray2z4");
+@import url("https://main.mohfw.gov.in/modules/node/node.css?ray2z4");
+@import url("https://main.mohfw.gov.in/modules/search/search.css?ray2z4");
+@import url("https://main.mohfw.gov.in/modules/user/user.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/views/css/views.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/extlink/extlink.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/ckeditor/css/ckeditor.css?ray2z4");
+</style>
+<style>
+@import url("https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/css/base.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/css/font.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/css/base-responsive.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/css/font-awesome.min.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/ctools/css/ctools.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/lightbox2/css/lightbox.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/panels/css/panels.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/video/css/video.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/modules/contributed/flexslider/assets/css/flexslider_img.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/libraries/flexslider/flexslider.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/libraries/superfish/css/superfish.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/libraries/superfish/css/superfish-smallscreen.css?ray2z4");
+</style>
+<style>
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/bootstrap.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/style.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/material-design-iconic-font.min.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/animate.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/ie10-viewport-bug-workaround.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/owl.carousel.min.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/owl.theme.default.min.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/styles.css?ray2z4");
+@import url("https://main.mohfw.gov.in/sites/all/themes/dhfw/css/print.css?ray2z4");
+</style>
+  <script type="text/javascript" async="" defer="" src="http://analytics.wrc.nic.in/cmfanalytics/js/piwik.js"></script><script src="https://main.mohfw.gov.in/sites/all/modules/contributed/jquery_update/replace/jquery/2.2/jquery.min.js?v=2.2.4"></script>
+<script src="https://main.mohfw.gov.in/misc/jquery-extend-3.4.0.js?v=2.2.4"></script>
+<script src="https://main.mohfw.gov.in/misc/jquery-html-prefilter-3.5.0-backport.js?v=2.2.4"></script>
+<script src="https://main.mohfw.gov.in/misc/jquery.once.js?v=1.2"></script>
+<script src="https://main.mohfw.gov.in/misc/drupal.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/jquery_update/replace/jquery.form/4/jquery.form.min.js?v=4.2.1"></script>
+<script src="https://main.mohfw.gov.in/misc/ajax.js?v=7.73"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/admin_menu/admin_devel/admin_devel.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/extlink/extlink.js?ray2z4"></script>
+<script>
+		var _paq = _paq || [];
+		_paq.push(["trackPageView"]);
+		_paq.push(["enableLinkTracking"]);
+		(function() {
+			var u="http://analytics.wrc.nic.in/cmfanalytics/";
+			_paq.push(["setTrackerUrl", u+"analytics"]);
+			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+			g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"js/piwik.js"; s.parentNode.insertBefore(g,s);
+		}
+	)();</script>
+<script>var base_url ="https://main.mohfw.gov.in"; var themePath = "sites/all/themes/dhfw"; var modulePath = "sites/all/modules/cmf/cmf_content";</script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/js/font-size.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/js/framework.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/js/swithcer.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/cmf/guidelines/js/script.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/lightbox2/js/lightbox.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/video/js/video.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/views/js/base.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/misc/progress.js?v=7.73"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/views/js/ajax_view.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/flexslider/jquery.flexslider-min.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/superfish/sfsmallscreen.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/superfish/supposition.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/superfish/superfish.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/libraries/superfish/supersubs.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/superfish/superfish.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/themes/dhfw/js/custom.js?ray2z4"></script>
+<script src="https://main.mohfw.gov.in/sites/all/themes/dhfw/js/jquery.flexslider.js?ray2z4"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dhfw","theme_token":"xDjXeZxobmpL3n37jhIQMovKxAyZJxBHYiAVVVlyDzk","jquery_version":"2.2","js":{"sites\/all\/modules\/contributed\/flexslider\/assets\/js\/flexslider.load.js":1,"sites\/all\/modules\/contributed\/jquery_update\/replace\/jquery\/2.2\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contributed\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contributed\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contributed\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contributed\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/contributed\/extlink\/extlink.js":1,"0":1,"1":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/font-size.js":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/framework.js":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/swithcer.js":1,"sites\/all\/modules\/cmf\/guidelines\/js\/script.js":1,"sites\/all\/modules\/contributed\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/contributed\/video\/js\/video.js":1,"sites\/all\/modules\/contributed\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contributed\/views\/js\/ajax_view.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/contributed\/superfish\/superfish.js":1,"sites\/all\/themes\/dhfw\/js\/custom.js":1,"sites\/all\/themes\/dhfw\/js\/jquery.flexslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contributed\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contributed\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/views\/css\/views.css":1,"sites\/all\/modules\/contributed\/extlink\/extlink.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/base.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/font.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/flexslider.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/base-responsive.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contributed\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/contributed\/panels\/css\/panels.css":1,"sites\/all\/modules\/contributed\/video\/css\/video.css":1,"sites\/all\/modules\/contributed\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/themes\/dhfw\/system.menus.css":1,"sites\/all\/themes\/dhfw\/system.messages.css":1,"sites\/all\/themes\/dhfw\/system.theme.css":1,"sites\/all\/themes\/dhfw\/css\/bootstrap.css":1,"sites\/all\/themes\/dhfw\/css\/style.css":1,"sites\/all\/themes\/dhfw\/css\/material-design-iconic-font.min.css":1,"sites\/all\/themes\/dhfw\/css\/animate.css":1,"sites\/all\/themes\/dhfw\/css\/ie10-viewport-bug-workaround.css":1,"sites\/all\/themes\/dhfw\/css\/owl.carousel.min.css":1,"sites\/all\/themes\/dhfw\/css\/owl.theme.default.min.css":1,"sites\/all\/themes\/dhfw\/css\/site-responsive.css":1,"sites\/all\/themes\/dhfw\/css\/styles.css":1,"sites\/all\/themes\/dhfw\/css\/print.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)private:\/","default_image":"\/sites\/all\/modules\/contributed\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":""},"urlIsAjaxTrusted":{"\/":true},"flexslider":{"optionsets":{"flexslider_carousel_with_min_and_max_ranges":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":210,"itemMargin":5,"minItems":2,"maxItems":4,"move":0,"animation":"slide","slideshow":false,"slideshowSpeed":"7000","directionNav":true,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":true,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":false,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"instances":{"flexslider-1":"flexslider_carousel_with_min_and_max_ranges"}},"extlink":{"extTarget":"_blank","extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"superfish":{"1":{"id":1,"sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast"},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
+<noscript>
+  <link href="https://main.mohfw.gov.in/sites/all/themes/dhfw/css/no-js.css" type="text/css" rel="stylesheet">
+</noscript>
+</head><-body class="html front not-logged-in two-sidebars page-node i18n-en lightbox-processed">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('page') -->
+<!-- FILE NAME SUGGESTIONS:
+   x page--front.tpl.php
+   * page--node.tpl.php
+   * page.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/page--front.tpl.php' -->
+ 
+
+<header>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+  <!--Top-Header Section start-->
+  <div class="accessibility_top_nav">
+    <div class="wrapper">
+	  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header-top.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-header-top">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--11.tpl.php
+   * block--block.tpl.php
+   * block--header-top.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-block-11" class="block block-block first odd">
+
+      
+  <style type="text/css">
+.wrapper.common-wrapper {
+    z-index: 1;
+}
+.item-list ul{
+    list-style-image: url(/sites/all/themes/dhfw/images/ico-news-list.png);
+    margin: 0 0 10px 18px;
+}
+
+input#edit-reset{
+background: #e0e0e0!important; 
+    padding: 0px 0px !important;
+    display: inline-block;
+
+    width: 80px;
+    color: #000 !important; 
+
+
+}
+
+
+.nav-wrapper ul li a {
+    padding: 0px 15px 0 10px !important;
+    color: #fff;
+}
+.view-whos-who table caption {
+    display: table-caption !important;
+    text-align: center;}
+
+#sitemap .nolink_class {
+    color: #000;
+    text-decoration: none;
+}
+table caption{ display: none; }
+.about-minright-container caption{ text-align: left; font-size: 22px; margin: 15px 0;}
+.visitor h2 {
+    visibility: hidden;
+}
+#block-views-niramaya-ncd-newsletter-block h2 {font-size: 111%;}
+
+.view-circulars table caption {display: table-caption;
+    text-align: center;}
+
+
+/*.region-related-region-three .more-link a {
+    color: #686868;
+    background: #fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}*/
+.state-mini {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 0 15px 20px;
+}
+.union-mini .mini-second-block {
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px;
+    padding: 23px 10px 43px;
+    text-align: center;
+    width: 48%;
+}
+.scroll-table1 tr img {
+    height: auto !important;
+}
+#flexslider-2 .slides > li,  #flexslider-4 .slides > li {
+    padding: 20px;
+}
+
+.container-inline {
+    position: inherit !important;
+}
+</style>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--cmf-content--header-region-block.tpl.php
+   * block--cmf-content.tpl.php
+   * block--header-top.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-cmf-content-header-region-block" class="block block-cmf-content last even">
+
+      
+  <noscript class="no_scr">"JavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page"
+     </noscript><div class="wrapper common-wrapper">
+  <div class="container common-container ">
+      <div class="common-left clearfix">
+          <ul>
+              <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank" rel="noopener noreferrer" href="https://india.gov.in/hi/" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" role="link">भारत सरकार</a></span></li><li class="ministry"><span class="li_eng responsive_minis_eng"><a target="_blank" rel="noopener noreferrer" href="https://india.gov.in" title="GOVERNMENT OF INDIA  ,External Link that opens in a new window" role="link">GOVERNMENT OF INDIA  </a></span></li></ul>
+
+        </div>
+        <div class="common-right clearfix">
+          <ul id="header-nav">
+              <li class="ico-skip cf"><a href="#skipCont" title="" role="link">Skip to main content</a>
+		      </li> <li class="ico-site-search cf"><a href="javascript:void(0);" id="toggleSearch" title="Site Search" role="link">
+			
+			<img class="top" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-site-search.png" alt="Site Search"></a>
+			 
+						 <div class="search-drop " style="display: none;"><form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('search_block_form') -->
+<!-- BEGIN OUTPUT from 'modules/search/search-block-form.tpl.php' -->
+<div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" placeholder="Search - Keyword, Phrase">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" role="Submit"></div><input type="hidden" name="form_build_id" value="form-_mD9mB5RDDovRKtSjiutLkQj47GIjjpH3stNdH5CrrA">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+
+<!-- END OUTPUT from 'modules/search/search-block-form.tpl.php' -->
+
+</div></form></div>
+			</li><li class="ico-accessibility cf"><a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown" role="link">
+				
+				<img class="top" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-accessibility.png" alt="Accessibility Dropdown">
+				
+				</a>
+                  <ul style="visibility: hidden;">
+                     <li> <a onclick="set_font_size('increase')" title="Increase font size" href="javascript:void(0);" role="link">A<sup>+</sup>
+					  </a> </li>
+                        <li> <a onclick="set_font_size()" title="Reset font size" href="javascript:void(0);" role="link">A<sup>&nbsp;</sup></a> </li>
+                        <li> <a onclick="set_font_size('decrease')" title="Decrease font size" href="javascript:void(0);" role="link">A<sup>-</sup></a> </li>
+        <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast" role="link">A</a> </li>
+       <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast" style="display: none;" role="link">A</a> </li>
+                     
+                    </ul>
+                </li>
+                 <li class="ico-social cf"><a href="javascript:void(0);" id="toggleSocial" title="Social Medias" role="link">
+				<img class="top" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-social.png" alt="Social Medias"></a>
+                <ul style="visibility: hidden;"><li><a target="_blank" rel="noopener noreferrer" title="External Link that opens in a new window" href="https://twitter.com/MoHFW_INDIA" role="link"><img alt="Twitter Page" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-twitter.png"></a></li><li><a target="_blank" rel="noopener noreferrer" title="External Link that opens in a new window" href="https://www.youtube.com/user/mohfwindia" role="link"><img alt="youtube Page" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-youtube.png"></a></li></ul>
+                </li> <li class="ico-sitemap cf"><a href="https://main.mohfw.gov.in/site-map" title="Sitemap" role="link">
+					 
+					  <img class="top" src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-sitemap.png" alt="Sitemap"></a></li> <li class="hindi cmf_lan"><a href="javascript:;" title="Select Language" role="link">Language</a><ul style="visibility: hidden;"><li><a target="_blank" href="https://main.mohfw.gov.in/hi" lang="hi" class="alink" title="Click here for हिन्दी version." role="link">हिन्दी</a></li></ul></li> </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+    </div>
+  </div>
+  <!--Top-Header Section end-->
+	
+  <!--Header Section start here-->		
+  <section class="wrapper header-wrapper" id="fontSize" style="font-size: 100%;">
+    <div class="container-fluid">
+	   <h1 class="logo"><a href="/" title="Home" rel="home" class="header__logo" id="logo" role="link">
+                  <img class="national_emblem" src="https://main.mohfw.gov.in/sites/all/themes/cmf/images/emblem-dark.png" alt="national emblem">
+
+<strong lang="hi">स्वास्थ्य एवं परिवार कल्याण  मंत्रालय</strong> <strong lang="en"> <span>Ministry of Health &amp; Family Welfare </span></strong>
+<strong lang="hi">स्वास्थ्य एवं परिवार कल्याण विभाग</strong><strong lang="en"> Department of Health &amp; Family Welfare</strong>
+
+</a>
+</h1>
+	<a href="javascript:void(0);" class="toggle-nav-bar" role="link">
+                <span class="menu-icon"></span>
+                <span class="menu-text">Menu</span>
+            </a>
+	  <div class="header-right clearfix">
+	    <div class="right-content clearfix">
+		  <div class="float-element">
+		  <a class="sw-logo" target="_blank" rel="noopener noreferrer" href="https://mohfw.gov.in/node/4904" title="Novel Corona Virus" role="link">
+			  <img src="https://main.mohfw.gov.in/sites/all/themes/cmf/images/ezgif.com-video-to-gif.gif" alt="Novel Corona Virus">
+		    </a>
+		    <a class="sw-logo" target="_blank" rel="noopener noreferrer" href="https://swachhbharat.mygov.in/" title="Swachh Bharat, External link" role="link">
+			  <img src="https://main.mohfw.gov.in/sites/all/themes/cmf/images/swach-bharat.png" alt="swach bharat">
+		    </a>
+		  </div>
+	    </div>
+	  </div>
+    </div>
+  </section>
+  <!--Header Section end here-->
+<!--Page Navigation goes here -->
+  
+
+<!----------------logo part------------------->
+
+
+
+<!-------------menu part---------------->
+
+<div class="toggle-menu-section"><button class="toggle-now"><i class="fa fa-align-justify" aria-hidden="true"></i></button></div>
+
+<div class="menu-part" id="veer" style="font-size: 100%;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+		<ul class="mn">
+		                <div id="main-menu">
+                 
+                  <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-10 sf-parent-items-9 sf-single-items-1 superfish-processed sf-js-enabled sf-shadow"><li id="menu-3066-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/" title="Home" target="_self" class="sf-depth-1 active" role="link"><i class="fa fa-home"></i></a></li><li id="menu-3063-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-6 sf-parent-children-1 sf-single-children-5 menuparent"><a title="About Us" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">About Us<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-3080-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/about-us/about-the-ministry" title="About the Ministry" class="submenu sf-depth-2" target="_self" role="link" style="">About the Ministry</a></li><li id="menu-3799-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="/about-us/whos-who" title="Who's Who" target="_self" class="sf-depth-2" role="link" style="">Who's Who</a></li><li id="menu-3064-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" style=""><a title="Meet the Ministers" target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Meet the Ministers<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5410-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/about-us/meet-the-ministers/cabinet-ministers" target="_self" class="sf-depth-3" role="link" style="">Cabinet Minister</a></li><li id="menu-5406-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="/about-us/meet-the-ministers/minister-of-states" target="_self" class="sf-depth-3" role="link" style="">Minister of State</a></li><li id="menu-5486-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="/about-us/meet-the-ministers/social-media-update/twitter-feeds" target="_self" class="sf-depth-3" role="link" style="">Social Media Update</a></li><li id="menu-5487-1" class="last even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="/about-us/meet-the-ministers/contact-details" target="_self" class="sf-depth-3" role="link" style="">Contact Details</a></li></ul></li><li id="menu-3081-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="http://main.mohfw.gov.in/sites/default/files/Organization-Chart_1.pdf" title="Organisational Chart" class="submenu sf-depth-2" target="_blank" role="link" style="">Organisational Chart</a></li><li id="menu-3082-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="/about-us/organisational-set" title="Work Allocation" class="submenu sf-depth-2" target="_self" role="link" style="">Work Allocation</a></li><li id="menu-3079-1" class="last even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="/about-us/constitutional-provisions" title="Constitutional Provisions" class="submenu sf-depth-2" target="_self" role="link" style="">Constitutional Provisions</a></li></ul></li><li id="menu-5644-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-8 sf-parent-children-1 sf-single-children-7 menuparent"><a target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Organisation <span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-5668-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/organisation/Departments-of-Health-and-Family-Welfare" target="_self" class="sf-depth-2" role="link" style="">Departments of Health and Family Welfare</a></li><li id="menu-3771-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="http://dhr.gov.in/" title="Department of Health Resarch" target="_blank" class="sf-depth-2" role="link" style="">Department of Health Research</a></li><li id="menu-3589-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="http://dghs.gov.in/" title="Directorate General Health Services" target="_blank" class="sf-depth-2" role="link" style="">Directorate General of Health Services</a></li><li id="menu-3590-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="/Organisation/autonomous-bodies" title="Autonomous Bodies" target="_self" class="sf-depth-2" role="link" style="">Autonomous Bodies</a></li><li id="menu-3591-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="/Organisation/state-health-departments-0" title="State Health Departments" target="_self" class="sf-depth-2" role="link" style="">State Health Departments</a></li><li id="menu-3592-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="/Organisation/state-health-societies" title="State Health Societies" target="_self" class="sf-depth-2" role="link" style="">State Health Societies</a></li><li id="menu-3593-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="/Organisation/hospitals" title="Hospitals" target="_self" class="sf-depth-2" role="link" style="">Hospitals</a></li><li id="menu-5645-1" class="last even sf-item-8 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Institutions <span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-3594-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/Organisation/Institutions/teaching-institutions" title="Teaching Institutions" target="_self" class="sf-depth-3" role="link" style="">Teaching Institutions</a></li><li id="menu-3595-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="/Organisation/Institutions/research-institutions" title="Research Institutions" target="_self" class="sf-depth-3" role="link" style="">Research Institutions</a></li></ul></li></ul></li><li id="menu-3068-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-11 sf-parent-children-2 sf-single-children-9 menuparent"><a title="Major Programmes" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Major Programmes<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-5544-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="http://nhm.gov.in/" title="External site that open in a new windows" target="_self" class="sf-depth-2" role="link" style="">National Health Mission</a></li><li id="menu-3503-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" style=""><a title="Communicable Diseases" target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Communicable Diseases<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5669-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="http://www.naco.gov.in/" title="Department of AIDS Control" target="_blank" class="sf-depth-3" role="link" style="">Department of AIDS Control</a></li><li id="menu-5672-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="http://idsp.nic.in/" target="_blank" class="sf-depth-3 ext" rel="noopener noreferrer" role="link" style="">Integrated Disease Surveillance Programme (IDSP)</a></li><li id="menu-5670-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="http://www.tbcindia.nic.in/" target="_blank" class="sf-depth-3 ext" rel="noopener noreferrer" role="link" style="">National Tuberculosis Elimination Programme (NTEP)</a></li><li id="menu-5671-1" class="last even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="http://nvbdcp.gov.in/" target="_blank" class="sf-depth-3" role="link" style="">National Vector Borne Disease Control Programme (NVBDCP)</a></li></ul></li><li id="menu-3504-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-3 sf-parent-children-2 sf-single-children-1 menuparent" style=""><a title="Non-Communicable Diseases, Injury &amp; Trauma" target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Non-Communicable Diseases, Injury &amp; Trauma<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5675-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent" style=""><a href="/Major-Programmes/Non-Communicable-Diseases-Injury-Trauma/Non-Communicable-Diseases-1" title="Non Communicable Diseases -1" target="_self" class="sf-depth-3 menuparent sf-with-ul" style="" role="link">Non Communicable Diseases -1<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5679-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="/Major-Programmes/non-communicable-diseases-injury-trauma/National-Mental-Health-Programme-NMHP" title="National Mental Health Programme (NMHP)" target="_self" class="sf-depth-4" role="link" style="">National Mental Health Programme (NMHP)</a></li><li id="menu-7037-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="/major-programmes/Non-Communicable-Diseases/Non-Communicable-Diseases-1" target="_self" class="sf-depth-4" role="link" style="">National Programme for Health Care of the Elderly(NPHCE)</a></li><li id="menu-6182-1" class="last odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="/Major-Programmes/Non-Communicable-Diseases-Injury-Trauma/National-Programme-for-Prevention-and-Control-of-Deafness-NPPCD" target="_self" class="sf-depth-4" role="link" style="">National Programme for Prevention and Control of Deafness (NPPCD)</a></li></ul></li><li id="menu-6181-1" class="middle even sf-item-2 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a target="_self" class="sf-depth-3 menuparent nolink sf-with-ul" style="" role="link">Non Communicable Disease - II<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-6185-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="/Major-Programmes/non-communicable-diseases-injury-trauma/Non-Communicable-Disease-II/National-Programme-for-Prevention-and-Control-of-Cancer-Diabetes-Cardiovascular-diseases-and-Stroke-NPCDCS" target="_self" class="sf-depth-4" role="link" style="">National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular diseases and Stroke (NPCDCS)</a></li><li id="menu-6186-1" class="last even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="/Major-Programmes/non-communicable-diseases-injury-trauma/Non-Communicable-Disease-II/pradhan-mantri-national-dialysis-programme-under-nhm" target="_self" class="sf-depth-4" role="link" style="">Pradhan Mantri National Dialysis Programme under NHM</a></li></ul></li><li id="menu-7035-1" class="last odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="/basicpage-6" target="_self" class="sf-depth-3" role="link" style="">National programme for Prevention &amp; Management of Trauma &amp; Burn Injuries (NPPMT&amp;BI)</a></li></ul></li><li id="menu-3505-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="http://pmssy-mohfw.nic.in/" title="External site that open in a new windows" target="_blank" class="sf-depth-2 ext" rel="noopener noreferrer" role="link" style="">Pradhan Mantri Swasthya Suraksha Yojana - PMSSY</a></li><li id="menu-3506-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="/Major-Programmes/poor-patients-financial-support" title="Poor Patients-Financial Assistance" target="_self" class="sf-depth-2" role="link" style="">Poor Patients-Financial Support</a></li><li id="menu-3507-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="/major-programmes/infrastructure-maintenance" title="Infrastructure Maintenance" target="_self" class="sf-depth-2" role="link" style="">Infrastructure Maintenance</a></li><li id="menu-3508-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="/major-programmes/other-national-health-programmes" title="Other National Health Programmes" target="_self" class="sf-depth-2" role="link" style="">Other National Health Programmes</a></li><li id="menu-3509-1" class="middle even sf-item-8 sf-depth-2 sf-no-children" style=""><a href="http://www.rsby.gov.in/" title="External link that opens in  new window" target="_self" class="sf-depth-2" role="link" style="">Rashtriya Swasthya Bima Yojna</a></li><li id="menu-6183-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children" style=""><a href="/Major-Programmes/Health-Meals" target="_self" class="sf-depth-2" role="link" style="">Health Melas</a></li><li id="menu-5678-1" class="middle even sf-item-10 sf-depth-2 sf-no-children" style=""><a href="/majorprogrammes/non-communicable-diseases-injury-trauma/universal-immunization-programme-uip" title="Universal Immunization Programme (UIP)" target="_self" class="sf-depth-2" role="link" style="">Universal Immunization Programme (UIP)</a></li><li id="menu-5677-1" class="last odd sf-item-11 sf-depth-2 sf-no-children" style=""><a href="/Major-Programmes/Non-Communicable-Diseases-Injury-Trauma/Pulse-Polio-Programme" title="Pulse Polio Programme" target="_self" class="sf-depth-2" role="link" style="">Pulse Polio Programme</a></li></ul></li><li id="menu-3769-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-15 sf-parent-children-3 sf-single-children-12 menuparent"><a title="Documents" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Documents<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-4073-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/documents/reports" title="Reports" target="_self" class="sf-depth-2" role="link" style="">Reports</a></li><li id="menu-5429-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="/documents/Statistics" title="staistics" target="_self" class="sf-depth-2" role="link" style="">Statistics</a></li><li id="menu-3568-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="/documents/policy" title="Policy" target="_self" class="sf-depth-2" role="link" style="">Policy</a></li><li id="menu-5423-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="/documents/rfd" target="_self" class="sf-depth-2" role="link" style="">Result Framework Document (RFD)</a></li><li id="menu-4075-1" class="middle odd sf-item-5 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Budget<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5437-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/documents/budget/expenditure-budget" title="Document" target="_self" class="sf-depth-3" role="link" style="">Expenditure Budget</a></li><li id="menu-5439-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="/documents/Budget/outcome%20budget" title="Outcome Budget" target="_self" class="sf-depth-3" role="link" style="">Outcome Budget</a></li></ul></li><li id="menu-3749-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="http://nhm.gov.in/communitisation/asha/about-asha.html" title="External Website will open in a new window" target="_self" class="sf-depth-2" role="link" style="">Accredited Social Health Activist (ASHA)</a></li><li id="menu-4079-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="/documents/publication" title="Publication" target="_self" class="sf-depth-2" role="link" style="">Publications</a></li><li id="menu-5650-1" class="middle even sf-item-8 sf-depth-2 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" style=""><a target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Circulars<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-6204-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/Circulars/CGHS" target="_self" class="sf-depth-3" role="link" style="">CGHS</a></li><li id="menu-5655-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="/Organisation/Departments-of-Health-and-Family-Welfare/chs/chs-v/orders-and-circular-chs-v" title="Central Health Services (CHS)" target="_self" class="sf-depth-3" role="link" style="">Central Health Services (CHS)</a></li><li id="menu-5673-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="/Circulars/Hospital-II" title="Hospital-II" target="_self" class="sf-depth-3" role="link" style="">Hospital-II</a></li><li id="menu-5674-1" class="last even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="/Circulars/PH%20Division" title="PH Division" target="_self" class="sf-depth-3" role="link" style="">PH Division</a></li></ul></li><li id="menu-5461-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children" style=""><a href="/Documents/Recruitment-Rules" title="Recruitment Rules" target="_self" class="sf-depth-2" role="link" style="">Recruitment Rules</a></li><li id="menu-4077-1" class="middle even sf-item-10 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style=""><a href="/Documents/Forms" title="Form &amp; Procedures" target="_self" class="sf-depth-2 menuparent sf-with-ul" style="" role="link">Forms<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-6937-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/basicpage-1" target="_self" class="sf-depth-3" role="link" style="">Meta Data Forms for publishing content on the Website</a></li></ul></li><li id="menu-5418-1" class="middle odd sf-item-11 sf-depth-2 sf-no-children" style=""><a href="/documents/program-guidelines" target="_self" class="sf-depth-2" role="link" style="">Program Guidelines</a></li><li id="menu-6742-1" class="middle even sf-item-12 sf-depth-2 sf-no-children" style=""><a href="/basicpage/1st-quarterly-review-meeting-states-union-territories-19-20-september-2019" target="_self" class="sf-depth-2" role="link" style="">1st Quarterly Review Meeting With States/ Union Territories 19 &amp; 20 September 2019</a></li><li id="menu-7145-1" class="middle odd sf-item-13 sf-depth-2 sf-no-children" style=""><a href="/documents/ImplementationofAB-HWCsintheStates/UTs" target="_self" class="sf-depth-2" role="link" style="">Implementation of AB-HWCs in the States/UTs</a></li><li id="menu-6203-1" class="middle even sf-item-14 sf-depth-2 sf-no-children" style=""><a href="/Documents/vision-mission-and-objective-statement-mohfw" target="_self" class="sf-depth-2" role="link" style="">Vision, Mission and Objective Statement for MoHFW</a></li><li id="menu-6188-1" class="last odd sf-item-15 sf-depth-2 sf-no-children" style=""><a href="/Documents/health-all-resonates-who-regional-committee-session" target="_self" class="sf-depth-2" role="link" style="">WHO Regional Committee session 2018</a></li></ul></li><li id="menu-5647-1" class="middle even sf-item-6 sf-depth-1 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent"><a target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Digital Services <span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-4082-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/digital-payment" title="Digital Payment" target="_self" class="sf-depth-2" role="link" style="">Digital Payment</a></li><li id="menu-5591-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-4 sf-parent-children-1 sf-single-children-3 menuparent" style=""><a target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Digital Resources<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-6939-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="http://books.vknnimhans.in/bookcase/vdzwz" target="_blank" class="sf-depth-3 ext" rel="noopener noreferrer" role="link" style="">Library for "Standard Treatment Guidelines for the Management of Substance Use Disorders and Behavioural Addictions"</a></li><li id="menu-5599-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="http://vlc.nimhans.ac.in/" target="_blank" class="sf-depth-3 ext" rel="noopener noreferrer" role="link" style="">Digital Learning Courses by NIMHANS</a></li><li id="menu-5593-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="http://cancerindia.org.in/" target="_blank" class="sf-depth-3 ext" rel="noopener noreferrer" role="link" style="">National Institute of Cancer Prevention and Research (NICPR)</a></li><li id="menu-5594-1" class="last even sf-item-4 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a target="_self" class="sf-depth-3 menuparent nolink sf-with-ul" style="" role="link">Online Oncology Tutorial Series<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5597-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.omnicuris.com/academics/advanced-clinical-oncology" target="_blank" class="sf-depth-4 ext" rel="noopener noreferrer" role="link" style="">Advanced Clinical Oncology</a></li><li id="menu-5598-1" class="last even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.omnicuris.com/academics/basics-of-oncology-" target="_blank" class="sf-depth-4 ext" rel="noopener noreferrer" role="link" style="">Basic of Clinical Oncology</a></li></ul></li></ul></li><li id="menu-4071-1" class="last odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="/digital-services/medical-education-counselling" title="Medical Education &amp; Counselling" target="_self" class="sf-depth-2" role="link" style="">Medical Education &amp; Counselling</a></li></ul></li><li id="menu-3420-1" class="middle odd sf-item-7 sf-depth-1 sf-total-children-6 sf-parent-children-1 sf-single-children-5 menuparent"><a title="E-Tender" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">E-Citizen/Tender<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-6938-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://main.mohfw.gov.in/sites/default/files/9986280517Citizens%20charter_1.pdf" target="_blank" class="sf-depth-2" role="link" style="">Citizen's Charter</a></li><li id="menu-5425-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="/E-Citizen-and-Tender/csma" title="Central Services (Medical Attendance)" target="_self" class="sf-depth-2" role="link" style="">CS(MA) Central Services Medical Attendant</a></li><li id="menu-5648-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="/e-tender" target="_self" class="sf-depth-2" role="link" style="">E-Tender</a></li><li id="menu-6936-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="/basicpage-0" target="_self" class="sf-depth-2" role="link" style="">RTI</a></li><li id="menu-5649-1" class="middle odd sf-item-5 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent" style=""><a target="_self" class="sf-depth-2 menuparent nolink sf-with-ul" style="" role="link">Acts, Rules and Standards for Health Sector <span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="left: 100%; float: none; width: 12em;"><li id="menu-5441-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="/acts-rules-and-standards-health-sector/acts" target="_self" class="sf-depth-3" role="link" style="">Acts</a></li><li id="menu-5443-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="/acts-rules-and-standards-health-sector/notifications" title="Notifications" target="_self" class="sf-depth-3" role="link" style="">Notifications</a></li><li id="menu-4104-1" class="last odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="/acts-rules-and-standards-health-sector/standards-health-sector" title="Standards for Health Sector" target="_self" class="sf-depth-3" role="link" style="">Standards for Health Sector</a></li></ul></li><li id="menu-3651-1" class="last even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="http://pgportal.gov.in/" title="External Website will open in a new window" target="_self" class="sf-depth-2" role="link" style="">Public Grievances</a></li></ul></li><li id="menu-4083-1" class="middle even sf-item-8 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Media<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-4085-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/media/photo-gallery" title="Photo Gallery" target="_self" class="sf-depth-2" role="link" style="">Photo Gallery</a></li><li id="menu-5451-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="/media/news-and-highlights" title="News and Highlights" target="_self" class="sf-depth-2" role="link" style="">News and Highlights</a></li><li id="menu-4091-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="/media/events-announcements" title="Events/Announcements" target="_self" class="sf-depth-2" role="link" style="">Events/Announcements</a></li><li id="menu-4093-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="/media/disease-alerts" title="Disease Alerts" target="_self" class="sf-depth-2" role="link" style="">Disease Alerts</a></li><li id="menu-4095-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="/media/key-developments" title="Key Developments" target="_self" class="sf-depth-2" role="link" style="">Key Developments</a></li><li id="menu-5450-1" class="last even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="/media/major-achievements" target="_self" class="sf-depth-2" role="link" style="">Major Achievements</a></li></ul></li><li id="menu-3570-1" class="middle odd sf-item-9 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a title="Parliament Questions" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Parliament Q&amp;A<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-4106-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="http://164.100.47.194/Loksabha/Questions/Qtextsearch.aspx" title="External site that open in a new windows" target="_blank" class="sf-depth-2 ext" rel="noopener noreferrer" role="link" style="">Lok Sabha</a></li><li id="menu-4108-1" class="last even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="http://164.100.47.5/qsearch/qsearch.aspx" title="External site that open in a new windows" target="_blank" class="sf-depth-2 ext" rel="noopener noreferrer" role="link" style="">Rajya Sabha</a></li></ul></li><li id="menu-3574-1" class="last even sf-item-10 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a title="Contact Us" target="_self" class="sf-depth-1 menuparent nolink sf-with-ul" role="link">Contact Us<span class="sf-sub-indicator"> »</span></a><ul class="sf-hidden" style="float: none; width: 12em;"><li id="menu-6704-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="/department-health-and-family-welfare-directory" target="_self" class="sf-depth-2" role="link" style="">Directory of DoHFW</a></li><li id="menu-3575-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="/contact-us/department-health-and-family-welfare-directory" title="Department of Health and Family Welfare" target="_self" class="sf-depth-2" role="link" style="">Web Information Manager</a></li><li id="menu-3582-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="http://naco.gov.in/about-us/whos-who" title="External website that open in new window" target="_blank" class="sf-depth-2" role="link" style="">National AIDS Control Organisation</a></li><li id="menu-5484-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="http://dghs.gov.in/content/126_1_ContactUs.aspx" target="_blank" class="sf-depth-2" role="link" style="">Directorate General of Health Services</a></li><li id="menu-3579-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="http://nhm.gov.in/index1.php?lang=1&amp;level=1&amp;sublinkid=23&amp;lid=51" title="External Site that opens in a new Window" target="_self" class="sf-depth-2" role="link" style="">STATES/UTS OFFICIAL</a></li><li id="menu-6187-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="/Contact-Us/public-grievance-officer-details" target="_self" class="sf-depth-2" role="link" style="">Public Grievance Officer Details</a></li><li id="menu-6933-1" class="last odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="/Contact%20us/nodal-officer-under-provision-information-technology" target="_self" class="sf-depth-2" role="link" style="">Nodal Officer under provision of Information Technology (procedures and safeguards for blocking of access of information by Public) Rules, 2009</a></li></ul></li></ul>
+                </div>
+            		</ul>
+</div>
+</div>
+</div>
+</div>
+<!-------------menu part---------------->
+
+
+
+<!----------------banner section------------->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--slider-region.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-slider-region">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--slider-for-front-block.tpl.php
+   * block--views.tpl.php
+   * block--slider-region.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-slider-for-front-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-slider-for-front view-id-slider_for_front view-display-id-block view-dom-id-9f9181364507abb10be00d73b64fab20">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__slider_for_front__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--slider-for-front--block.tpl.php
+   * views-view-table--slider-for-front.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--slider-for-front--block.tpl.php' -->
+<div class="banner-section">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+ <div class="playpause"><button><i class="fa fa-play" aria-hidden="true"></i></button></div>
+  <ol class="carousel-indicators">
+   
+   	<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="4" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="5" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="6" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="7" class="active"></li>
+	   	<li data-target="#myCarousel" data-slide-to="8" class=""></li>
+	   	<li data-target="#myCarousel" data-slide-to="9" class=""></li>
+	      
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    
+		
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/Ayushman_Bharat_Creative_07_Hin_WB.png?itok=RvJAS6DR" width="1349" height="403" alt="Ayushman Bharat" title="Ayushman Bharat"></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/1800X600.jpg?itok=wpEDXZhZ" width="1349" height="403" alt="Pariksha Pe Baat PM kai Saath 1st April 2022"></a></div>		<div class="bottom-caption">Pariksha Pe Baat PM kai Saath 1st April 2022</div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/UIP.jpg?itok=G7ma5Y7T" width="1349" height="403" alt="The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar releasing the publication at the Universal Health Coverage Day Ceremony, in New Delhi on December 13, 2021. The Secretary, Ministry of Health &amp; Family Welfare, Shri Rajesh Bhushan and other dignitaries are also seen." title="The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar releasing the publication at the Universal Health Coverage Day Ceremony, in New Delhi on December 13, 2021. The Secretary, Ministry of Health &amp; Family Welfare, Shri Rajesh Bhushan and other dignitaries are also seen."></a></div>		<div class="bottom-caption"><br>
+The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar releasing the publication at the Universal Health Coverage Day Ceremony, in New Delhi on December 13, 2021. The Secretary, Ministry of Health &amp; Family Welfare, Shri Rajesh Bhush</div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/AIDSday.jpg?itok=jyLezIac" width="1349" height="403" alt="The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar addressing on the occasion of World AIDS Day, in New Delhi on December 01, 2021."></a></div>		<div class="bottom-caption">The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar addressing on the occasion of World AIDS Day, in New Delhi on December 01, 2021.</div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/usdelegates051021.jpg?itok=lXt9D-F6" width="1349" height="403" alt="The Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya at the closing session of 4th Indo-US Health Dialogue being hosted by the India, in New Delhi on September 28, 2021." title="The Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya at the closing session of 4th Indo-US Health Dialogue being hosted by the India, in New Delhi on September 28, 2021."></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="https://amritmahotsav.nic.in/" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/AzadiKaAmritMahotsav.jpg?itok=T8hGB_Zs" width="1349" height="403" alt="Azadi Ka  Amrit Mahotsav" title="Azadi Ka  Amrit Mahotsav"></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item active left">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/OP1.jpg?itok=u9o-N_F3" width="1349" height="403" alt="Free Vaccination" title="Free Vaccination"></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item next left">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/D.jpg?itok=Vc-P_cgZ" width="1349" height="403" alt="Jan Andolan" title="Jan Andolan"></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/ss.jpg?itok=SJCkAegW" width="1349" height="403" alt="Jan Andolan" title="Jan Andolan"></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	<div class="item">
+		<div class="image_link"><a href="https://pmcares.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/1349_403_resize/public/pmcare%20banner%20indiaportal%201250-290.jpg?itok=vjg2p7vb" width="1349" height="403" alt=""></a></div>		<div class="bottom-caption"></div>
+	</div>
+	
+   	
+	
+	
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="link">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next" role="link">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--slider-for-front--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+
+<!-------------about section----------->
+<div id="skipCont" class="wrapper"></div>
+<div class="about-section" id="veer" style="font-size: 100%;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-8">
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--front-about.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-front-about">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--block--15.tpl.php
+   * block--block.tpl.php
+   * block--front-about.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-block-15" class="block block-block first last odd">
+
+      
+  <div class="abcontent">
+<h2>About the Ministry</h2>
+</div>
+<div id="cmscontent">
+<p>Initially the&nbsp;Ministry of Health and Family Welfare had two Departments, Each of these Departments was headed by the Secretary to the Government of India:-Department of Health &amp; Family Welfare and Department of Health Research. On August 7, 2014 vide extraordinary Gazette notification Part –II Section-3, Sub Section(ii) New Delhi Thursday August 7, 2014, Department of AIDS Control has been merged with Department of Health &amp; Family Welfare and now be known as National AIDS Control Organization (NACO)... <a href="node/558" role="link">Read More</a></p>
+</div>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+</div>
+<div class="col-md-4">
+<div class="profile-st">
+
+	<div id="block-block-14" class="block block-block contextual-links-region first last odd">
+
+      <div class="contextual-links-wrapper"><ul class="contextual-links">
+<li class="block-translate last"></li>
+</ul></div>
+  <div>
+<ul>
+		<li><img src="https://main.mohfw.gov.in/sites/default/files/HFM.jpg" alt="Shri Mansukh Mandaviya" title="Shri Mansukh Mandaviya"><a href="https://mansukhmandaviya.in/the-man/" target="_blank" alt="Shri Mansukh Mandaviya" class="ext" rel="noopener noreferrer" role="link"><span style="font-size:14px"><strong>Dr. Mansukh Mandaviya</strong></span></a>
+		
+		Hon’ble Cabinet Minister<br>
+		
+		
+		<a href="https://mansukhmandaviya.in/the-man/" target="_blank" class="ext" rel="noopener noreferrer" role="link">View Portfolio </a></li>
+	</ul>
+	</div>
+
+	<div>
+	<ul>
+		<li><img src="https://main.mohfw.gov.in/sites/default/files/mos.jpg" alt="Dr. Bharati Pravin Pawar" title="Dr. Bharati Pravin Pawar"> <a href="http://loksabhaph.nic.in/Members/MemberBioprofile.aspx?mpsno=5201" target="_blank" alt="Dr. Bharati Pravin Pawar" class="ext" rel="noopener noreferrer" role="link"><span style="font-size:14px"><strong>Dr. Bharati Pravin Pawar</strong></span> </a><em> </em>Hon’ble Minister of State<em> </em><br>
+		<br>
+		<br>
+		<a href="http://loksabhaph.nic.in/Members/MemberBioprofile.aspx?mpsno=5201" target="_blank" class="ext" rel="noopener noreferrer" role="link">View Portfolio</a><em> </em></li>
+	</ul></div>
+
+</div>
+	
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="news-section">
+<div class="news-part">
+	<ul>
+		<li>
+		<div class="fls"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+		<div class="flr">
+			       <p class="subtitles">Press Releases </p>
+		
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-press-releases view-id-press_releases view-display-id-block view-dom-id-e4f8992f1f7edd174738314e87108e39">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__press_releases__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--press-releases--block.tpl.php
+   * views-view-table--press-releases.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--press-releases--block.tpl.php' -->
+
+	<p><a target="_blank" rel="noopener noreferrer" href="http://pib.nic.in" class="ext" role="link">Releases in English <i class="fa fa-external-link" aria-hidden="true"></i><span class="ext" aria-label="(link is external)"></span></a></p>
+	<p><a target="_blank" rel="noopener noreferrer" href="http://pib.nic.in" class="ext" role="link">Releases in Hindi <i class="fa fa-external-link" aria-hidden="true"></i><span class="ext" aria-label="(link is external)"></span></a></p>
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--press-releases--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+		</div>
+		</li>
+		
+		<li>
+		<div class="fls"><i class="fa fa-photo" aria-hidden="true"></i></div>
+		<div class="flr">
+			       <p class="subtitles">Press Photos </p>
+		
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-press-photos view-id-press_photos view-display-id-block view-dom-id-2e01c705ee400fb6bca6207c53f6b925">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__press_photos__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--press-photos--block.tpl.php
+   * views-view-table--press-photos.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--press-photos--block.tpl.php' -->
+
+	<p><a target="_blank" rel="noopener noreferrer" href="http://pib.nic.in" class="ext" role="link">Photos (English Caption) <i class="fa fa-external-link" aria-hidden="true"></i><span class="ext" aria-label="(link is external)"></span></a></p>
+	<p><a target="_blank" rel="noopener noreferrer" href="http://pib.nic.in" class="ext" role="link">Photos (Hindi Caption) <i class="fa fa-external-link" aria-hidden="true"></i><span class="ext" aria-label="(link is external)"></span></a></p>
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--press-photos--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+		</div>
+		</li>
+		
+		<li>
+		<div class="fls"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
+		<div class="flr">
+			       <p class="subtitles">Niramaya-NCD Newsletter</p>
+		
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-niramaya-ncd-newsletter- view-id-niramaya_ncd_newsletter_ view-display-id-block view-dom-id-a145797950e5de24b08ec5a9a7cf3818">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+		</div>
+		</li>
+	</ul>
+</div>
+
+</div>
+</div>
+
+
+
+
+<!-------------about section----------->
+
+ 
+
+
+<!---------------what's new and other section----------->
+
+<div class="whatsnewothersection">
+
+<div class="nws" id="veer">
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-7">
+<ul class="nav nav-tabs tmst">
+  <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true" role="link">	       <p class="subtitles">News &amp; Highlights</p></a></li>
+  <li class=""><a href="#profile" data-toggle="tab" aria-expanded="false" role="link">	       <p class="subtitles">Whats New</p></a></li>
+    <li class=""><a href="#thri" data-toggle="tab" aria-expanded="false" role="link">	       <p class="subtitles">Related Links</p></a></li>
+
+  
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade active in" id="home">
+   <div class="tab-content-part">
+   <div class="row">
+   
+
+      <div class="col-md-12">
+	   
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--sidebar-first.tpl.php
+   x region--sidebar.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region--sidebar.tpl.php' -->
+  <section class="region region-sidebar-first column sidebar">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--news-and-highlight-block.tpl.php
+   * block--views.tpl.php
+   * block--sidebar-first.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-news-and-highlight-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-news-and-highlight view-id-news_and_highlight view-display-id-block view-dom-id-bcbed4e848124ac2a9dcd589d57fdff7">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__news_and_highlight__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--news-and-highlight--block.tpl.php
+   * views-view-table--news-and-highlight.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--news-and-highlight--block.tpl.php' -->
+<ul>
+	<li><a href="/newshighlights-93" role="link">Public Notice on Accessibility Standards for Healthcare</a></li>
+	<li><a href="/newshighlights-92" role="link">Decision of the Central Government on lowering of qualifying cut-off percentile for NEET-UG, 2021 for admission to BDS course</a></li>
+	<li><a href="/newshighlights-91" role="link">Public Notice- Regarding not pursuing Medical Education in Pakistan</a></li>
+	<li><a href="/newshighlights-90" role="link">Rural Health Statistics 2020-21</a></li>
+	<li><a href="/newshighlights-89" role="link">Seniority List Non-Medical scientists CHS-VI</a></li>
+	<li><a href="/newshighlights-88" role="link">Final Seniority/Civil List of Specialist Grade I and SAG Level officers of Non-Teaching Specialist Sub-cadre of Central Health Service as on 01.01.2021</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--news-and-highlight--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="media/news-and-highlights" class="redmore" role="link">More <i class="zmdi zmdi-long-arrow-right zmdi-hc-fw"></i></a></p>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </section>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region--sidebar.tpl.php' -->
+
+   </div>
+   </div>
+   
+   
+   </div>
+  </div>
+  <div class="tab-pane fade" id="profile">
+   <div class="tab-content-part">
+   <div class="row">
+   
+   <div class="col-md-12">
+  	
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--related-region-three.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-related-region-three">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--32f3a2d1151c72b599a78594cd4016e9.tpl.php
+   * block--views.tpl.php
+   * block--related-region-three.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-32f3a2d1151c72b599a78594cd4016e9" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-disease-alert-on-front-tab view-id-disease_alert_on_front_tab view-display-id-block view-dom-id-bf11a7b3eb0a5fa1f038c8bae2b804c2">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__disease_alert_on_front_tab__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--disease-alert-on-front-tab--block.tpl.php
+   * views-view-table--disease-alert-on-front-tab.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--disease-alert-on-front-tab--block.tpl.php' -->
+<ul>
+	<li><a href="/diseasealerts-0" role="link">Guidelines for Management of Monkeypox Disease</a></li>
+	<li><a href="/diseasealerts" role="link">List of INSACOG WGS Laboratories with indicative State distribution</a></li>
+	<li><a href="/diseasealerts/novel-corona-virus" role="link">Novel Corona Virus</a></li>
+	<li><a href="/diseasealerts/nipah-virus-disease-guidelines" role="link">NIPAH Virus Disease Guidelines</a></li>
+	<li><a href="/diseasealerts/rare-diseases" role="link">Rare Diseases</a></li>
+	<li><a href="/media/disease-alerts/chikungunya" role="link">Chikungunya</a></li>
+	<li><a href="/media/disease-alerts/yellow-fever" role="link">Yellow Fever</a></li>
+</ul>
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--disease-alert-on-front-tab--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="media/disease-alerts" class="redmore" role="link">More <i class="zmdi zmdi-long-arrow-right zmdi-hc-fw"></i></a></p>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+   
+
+   </div>
+   </div>
+   
+   
+   </div>
+  </div>
+  
+   <div class="tab-pane fade" id="thri">
+   <div class="tab-content-part">
+   <div class="row">
+   
+   <div class="col-md-12">
+	
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--related-region-two.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-related-region-two">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--related-links-block.tpl.php
+   * block--views.tpl.php
+   * block--related-region-two.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-related-links-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-related-links view-id-related_links view-display-id-block view-dom-id-cdadc21792d81c7a1a4cad58e5ba3f60">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-unformatted.tpl.php' -->
+  <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="https://ndhm.gov.in/" target="_blank" role="link">National Digital Health Mission (NDHM)</a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="https://nha.gov.in/" target="_blank" role="link">National Health Authority (NHA)</a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="https://pmjay.gov.in/" target="_blank" role="link">Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana</a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="http://www.edantseva.gov.in/" target="_blank" role="link">eDantSeva</a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="http://www.sja.org.uk/sja/default.aspx" target="_blank" class="ext" rel="noopener noreferrer" role="link">St John Ambulance<span class="ext" aria-label="(link is external)"></span></a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="http://a2hp.mohfw.gov.in" target="_blank" role="link">Allied health care Professional Database</a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+  
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class="field-content" target="_blank" rel="noopener noreferrer" title="External Site that opens in a new window"><ul><li><a href="http://cancerindia.org.in/" target="_blank" class="ext" rel="noopener noreferrer" role="link"> National Institute of Cancer Prevention and Research (NICPR)<span class="ext" aria-label="(link is external)"></span></a></li></ul></div>
+</div>  </div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-fields.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view-unformatted.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="related-links" class="redmore" role="link">More <i class="zmdi zmdi-long-arrow-right zmdi-hc-fw"></i></a></p>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+   
+   
+   </div>
+   </div>
+   
+   
+   </div>
+  </div>
+  
+  
+</div>
+
+</div>
+
+
+<div class="col-md-5">
+
+<div class="media-section">
+<ul class="nav nav-tabs tmst">
+  <li class="active"><a href="#home3" data-toggle="tab" aria-expanded="true" role="link">	       <p class="subtitles">Photo</p></a></li>
+		   
+		     
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade active in" id="home3">
+   <div class="tab-content-part">
+   <div class="row">
+   <div class="col-md-12">
+	
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--photo-gallery.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-photo-gallery">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--photo-slider-block.tpl.php
+   * block--views.tpl.php
+   * block--photo-gallery.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-photo-slider-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-photo-slider view-id-photo_slider view-display-id-block view-dom-id-7339e0444d66343c1ba119e3c3352bb8">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__photo_slider__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--photo-slider--block.tpl.php
+   * views-view-table--photo-slider.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--photo-slider--block.tpl.php' -->
+   
+<div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          
+		  			<div class="item  active">
+				<div class="row">
+					<div>
+						<img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/486_203_resize/public/H20211201105526.jpg?itok=XGZn6QOA" width="486" height="203" alt="The Minister of State for Health and Family Welfare, Dr. Bharati Pravin Pawar addressing on the occasion of World AIDS Day, in New Delhi on December 01, 2021.">					</div>            
+				</div>
+			</div>
+		  			<div class="item ">
+				<div class="row">
+					<div>
+						<img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/486_203_resize/public/H20211026103043.jpeg?itok=6eC1XVnH" width="486" height="203" alt="he Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya addressing the press conference on PM Ayushman Bharat Health Infrastructure Mission, in New Delhi" title="he Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya addressing the press conference on PM Ayushman Bharat Health Infrastructure Mission, in New Delhi">					</div>            
+				</div>
+			</div>
+		  			<div class="item ">
+				<div class="row">
+					<div>
+						<img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/486_203_resize/public/H20211116104240.jpeg?itok=fRuJkdw-" width="486" height="203" alt="The Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya visiting after inaugurating the Health Pavilion, during the 40th India International Trade Fair (IITF), at Pragati Maidan, in New Delhi on November 16, 2021" title="The Union Minister for Health &amp; Family Welfare, Chemicals and Fertilizers, Shri Mansukh Mandaviya visiting after inaugurating the Health Pavilion, during the 40th India International Trade Fair (IITF), at Pragati Maidan, in New Delhi on November 16, 2021">					</div>            
+				</div>
+			</div>
+		          </div>
+        <a data-slide="prev" href="#media" class="left carousel-control" role="link">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control" role="link">›</a>
+</div>
+
+  
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--photo-slider--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="media/photo-gallery" class="redmore" role="link">More <i class="zmdi zmdi-long-arrow-right zmdi-hc-fw"></i></a></p>
+    </div>
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+   </div>
+   
+   
+   </div>
+   
+   
+   </div>
+  </div>
+
+  
+   
+  
+  
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<img src="sites/all/themes/dhfw/images/1514.jpg" alt="" class="opcityten">
+
+
+</div>
+
+
+<!---------------what's new and other section----------->
+
+
+
+<!-----------important event section--------------->
+
+<div class="container-fluid importantevent">
+<div class="row">
+<div class="col-md-3 event">
+<h3><span class="top-title">I<sub>mportant</sub> </span><span class="top-bottom-text">Events </span></h3>
+
+	
+
+</div>
+<div class="col-md-9">
+<div class="bottom-mid-sectin">
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--secondary-menu.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-secondary-menu">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--block-menu-block.tpl.php
+   * block--views.tpl.php
+   * block--secondary-menu.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-views-block-menu-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+<div class="view view-block-menu view-id-block_menu view-display-id-block view-dom-id-45a5a69a6efc1a1bd7c93f9385faed1d">
+        
+  
+  
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_table__block_menu__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-table--block-menu--block.tpl.php
+   * views-view-table--block-menu.tpl.php
+   * views-view-table.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--block-menu--block.tpl.php' -->
+<ul>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://www.nhp.gov.in/" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/nhp.png" width="40" height="41" alt="National Health Portal" title="National Health Portal"><span>National Health Portal</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://hmis.nhp.gov.in/#!/standardReports" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/drop.png" width="59" height="52" alt=""><span>Health Statistics Information Portal</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="http://cghs.gov.in/" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/cghs_2.jpg" width="57" height="57" alt="Central Government Health Scheme" title="Central Government Health Scheme"><span>Central Government Health Scheme</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://mcc.nic.in/" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/link4.png" width="51" height="58" alt="Medical Counselling Medical / Dental Seats " title="Medical Counselling Medical / Dental Seats "><span>Medical Counselling Medical / Dental Seats </span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="http://nhm.gov.in/" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/national-health-mission.png" width="57" height="42" alt="National Health Mission " title="National Health Mission "><span>National Health Mission </span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://main.mohfw.gov.in/vacancy" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/vacancy_0.png" width="82" height="48" alt="Vacancy" title="Vacancy"><span>Vacancy</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://main.mohfw.gov.in/basicpage/act-rule-and-standards" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/Acts-Rules-Standards.png" width="66" height="53" alt="Acts ,Rule &amp; Standard" title="Acts ,Rule &amp; Standard"><span>Acts ,Rule &amp; Standard</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://ors.gov.in/index.html" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/logo.png" width="113" height="70" alt="Online Registration System" title="Online Registration System"><span>Online Registration System</span></a></li>
+	<li><a target="_blank" rel="noopener noreferrer" href="https://www.cowin.gov.in/" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/Co-Winn_App.png" width="62" height="62" alt=""><span>CoWIN</span></a></li>
+
+</ul>
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/views/views-view-table--block-menu--block.tpl.php' -->
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<!-- END OUTPUT from 'sites/all/modules/contributed/views/theme/views-view.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<!---------------carousel--------------->
+<link rel="stylesheet" href="sites/all/themes/dhfw/css/ticker.css">
+<script src="sites/all/themes/dhfw/js/fadeSlideShow.js"></script>
+<script src="sites/all/themes/dhfw/js/jquery.modern-ticker.min.js"></script>
+<!---------------carousel--------------->
+<section class="wrapper carousel-wrapper">
+	<div class="container-fluid">
+    	<div id="block-views-image-ticker-block" class="block block-views last even">
+
+      
+  <div class="view view-image-ticker view-id-image_ticker view-display-id-block view-dom-id-93c9c84f508eff14eea656adcf113c96">
+        
+  
+      <div class="view-content">
+      <div class="item-list"><div class="ticker1 modern-ticker mt-round mt-scroll">
+	<div class="mt-news" style="width: 1255px;">
+		<ul style="margin-left: -99px;">
+						
+						
+						
+						
+						
+						
+						
+						<!--<li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/dial-gov.png?itok=kJV9ypHq" width="168" height="75" alt="Common Man&#039;s Interface for Welfare Schemes" title="Common Man&#039;s Interface for Welfare Schemes" /></div>  </div>			</li>-->
+						
+						
+						
+						
+						  
+  <!--<li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://data.gov.in/#path=ministry_department/ministry-health-and-family-welfare" target="_blank"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/Open%20Government%20data%20on%20Health%20and%20Family%20Welfare%20Powered%20by%20data.gov_.in_.jpg?itok=dbu8vfIA" width="168" height="75" alt="Open Government data on Health and Family Welfare Powered by data.gov.in" title="Open Government data on Health and Family Welfare Powered by data.gov.in" /></a></div>  </div>			</li>-->
+  
+  
+    
+  
+  
+  
+     
+  
+  
+  
+  
+  
+   
+   
+  
+  
+						
+						
+					<li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://eci.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/eci.png?itok=GkUEFfEw" width="168" height="75" alt="Election Commission of India, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://pmnrf.gov.in/en/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/pmnrf_0.png?itok=8fLdK-jo" width="168" height="75" alt="PMNRF, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/incredible-india_0.png?itok=Gv2exF9p" width="168" height="75" alt="Incredible India, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.mygov.in/" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/mygov_2.png?itok=gmGmJzS0" width="168" height="75" alt="My Gov, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div> </div></li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.india.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/mygov_0_0.png?itok=hEwITjxq" width="168" height="75" alt="National Portal, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.makeinindia.com/home" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/makeinindia_1.png?itok=LjTOQYBC" width="168" height="75" alt="Make in India, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.digitalindia.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/digital-india_0_0.png?itok=PswclkAf" width="168" height="75" alt="Digital India, External Link that opens in a new window" title="External Link that opens in a new window"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://goidirectory.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/goe-directory.png?itok=lj5vtKcI" width="168" height="75" alt=",Goiweb Directory, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="http://indiacode.nic.in/" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/head2.jpg?itok=2gfIhfqW" width="168" height="75" alt="India Code Information System" title="India Code Information System"></a></div>  </div>			</li><li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/newshighlights/gst-information-cell" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/GST.png?itok=s3C6lYwg" width="168" height="75" alt="GST" title="GST"></a></div>  </div>			</li><li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://services.india.gov.in/service/ministry_services?cmd_id=1338&amp;ln=en" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/online-service.png?itok=SAFpRBRm" width="168" height="75" alt="Search Online Government Services of MoHfw " title="Search Online Government Services of MoHfw "></a></div>  </div>			</li><li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://doptcirculars.nic.in/Default.aspx?URL=dFaVfDsok83H%20" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/List%20of%20Governments%20Holidays.jpg?itok=INABJLLI" width="168" height="75" alt="List of Governments Holidays" title="List of Governments Holidays"></a></div>  </div>			</li><li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/right-information-rti/rti-act-for-ministry" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/rti.png?itok=iQ8FNWe5" width="168" height="75" alt="Right To Information(RTI)" title="Right To Information(RTI)"></a></div>  </div>			</li><li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/e-office.png?itok=XawhT7Tw" width="168" height="75" alt="eOffice" title="eOffice"></div>  </div>			</li><li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="http://pgportal.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/pg-portal.png?itok=aBkhbBba" width="168" height="75" alt="PORTAL FOR PUBLIC GRIEVANCES" title="PORTAL FOR PUBLIC GRIEVANCES"></a></div>  </div>			</li><li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://notto.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/logo-%281%29_0_0.png?itok=ubRt0lEc" width="168" height="75" alt="NOTTO" title="NOTTO"></a></div>  </div>			</li><li class="views-row views-row-10 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.nhp.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/nhp-india.png?itok=1mX5kvEz" width="168" height="75" alt="National Health Portal" title="National Health Portal"></a></div>  </div>			</li><li class="views-row views-row-11 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="http://nhm.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/Rashtriya%20Bal%20Swasthya%20Karyakram%20%28RBSK%29.jpg?itok=G1_Q6xsD" width="168" height="75" alt="Rashtriya Bal Swasthya Karyakram (RBSK)" title="Rashtriya Bal Swasthya Karyakram (RBSK)"></a></div>  </div>			</li><li class="views-row views-row-12 views-row-even">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.nikshay.in" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/nikshay.png?itok=8lpWT7xO" width="168" height="75" alt="Nikshay, External link that will open in a new window" title="Nikshay, External link that will open in a new window"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/Mother%20%26%20Child%20Tracking%20System.jpg?itok=2XzFd8CU" width="168" height="75" alt="Mother &amp; Child Tracking System" title="Mother &amp; Child Tracking System"></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://cgewho.in/" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/CENTRAL%20GOVERNMENT%20EMPLOYEES.jpg?itok=-_BDnMsA" width="168" height="75" alt="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window" title="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/sites/default/files/40640721491421816645.pdf" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/prada.jpg?itok=FNOOFOYh" width="168" height="75" alt="Pension Fund Regulatory and Development Authority" title="Pension Fund Regulatory and Development Authority"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/rural%20health.jpg?itok=y1mahG6U" width="168" height="75" alt="Rural Health Training Center Najafgarh " title="Rural Health Training Center Najafgarh "></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/draft.jpg?itok=vk56bh-a" width="168" height="75" alt="Interact for giving Suggestions" title="Interact for giving Suggestions"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/poor.png?itok=dxpjN7-f" width="168" height="75" alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/quit%20tobacco.jpg?itok=qVJaQwlW" width="168" height="75" alt="Quit Tabacoo, External link that will open in a new window" title="Quit Tabacoo, External link that will open in a new window"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.incometaxindia.gov.in/Pages/income-declaration-scheme.aspx" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/Income%20Tax%20Department.jpg?itok=tmvL7fws" width="168" height="75" alt="Income Tax Department, External link that will open in a new window" title="Income Tax Department, External link that will open in a new window"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://www.mygov.in/group-issue/inviting-ideas-pm-narendra-modis-mann-ki-baat-august-2016/" target="_blank" rel="noopener noreferrer" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/8956354581471930117.jpg?itok=pgjoKG4e" width="167" height="75" alt="mann ki baat" title="mann ki baat"></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <!--<div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/dmu-reports" target="_blank"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/dmu_0.png?itok=ujuoRY-4" width="168" height="75" alt="DMU Report" title="DMU Report" /></a></div>  </div>			</li>-->
+  </li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://main.mohfw.gov.in/my-hospital" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/mera_aspatal.png?itok=AJnQmToG" width="168" height="75" alt="My Hospital, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a></div>  </div>			</li><li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-upload-banner-image">        <div class="field-content"><a href="https://data.gov.in/" target="_blank" role="link"><img typeof="foaf:Image" src="https://main.mohfw.gov.in/sites/default/files/styles/banner_style_new/public/data-gov_1.png?itok=59UFgcmu" width="168" height="75" alt="Data Gov, External Link that opens in a new window." title="External Link that opens in a new window."></a></div>  </div>			</li></ul>
+	</div>
+	<div class="mt-controls">
+		<div class="mt-prev" title="Previous"></div>
+		<div class="mt-play mt-pause"></div>
+		<div class="mt-next" title="Next"></div>
+	</div>
+</div>
+
+</div>    </div>
+  
+  
+  
+</div>
+</div>
+    </div>
+</section><!--/.carousel-wrapper-->
+
+
+
+<!---------------carousel--------------->
+
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   x region--footer.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region--footer.tpl.php' -->
+  <footer id="footer" class="region region-footer">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--cmf-content--footer-region-block.tpl.php
+   * block--cmf-content.tpl.php
+   * block--footer.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+<div id="block-cmf-content-footer-region-block" class="block block-cmf-content first last odd">
+
+      
+  <div class="wrapper footer-wrapper">
+	<div class="footer-top-wrapper">
+    	<div class="container footer-top-container"><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://main.mohfw.gov.in/website-policies" title="Website Policies" target="_self" class="menu__link" role="link">Website Policies</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://main.mohfw.gov.in/terms-use" title="Terms of Use" target="_self" class="menu__link" role="link">Terms of Use</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://main.mohfw.gov.in/help" title="Help" target="_self" class="menu__link" role="link">Help</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://main.mohfw.gov.in/node/4401" class="menu__link" role="link">Feedback</a></li>
+</ul></div>
+    </div>
+    <div class="footer-bottom-wrapper">
+    	<div class="container footer-bottom-container">
+        	<div class="footer-content clearfix ">
+			 <div class="logo-cmf">
+            	<a href="http://cmf.gov.in/" target="_blank" rel="noopener noreferrer" role="link"><img src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/cmf-logo.png" alt="Built on Common Minimum Framework" title="External site that open in a new windows"></a>
+            </div> <div class="copyright-content">
+            	Website Content Managed by  <strong>Ministry of Health and Family Welfare | GOI</strong>
+            <span>Designed, Developed and Hosted by  <a href="http://www.nic.in/" title="NIC, External Link that opens in a new window" target="_blank" rel="noopener noreferrer" class="ext" role="link"><strong>National Informatics Centre( NIC )</strong><span class="ext" aria-label="(link is external)"></span></a> </span> <span class="lastupdated">Last Updated: <strong>03 Jun 2022</strong></span>
+            </div><div class="gtranslate skiptranslate"><script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.href='/'.replace('/'+plang+'/', '/');else location.href='/'+lang+'/'.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><style type="text/css">
+<!--
+a.gtflag {background-image:url('/sites/all/modules/contributed/gtranslate/gtranslate-files/16a.png');}
+a.gtflag:hover {background-image:url('/sites/all/modules/contributed/gtranslate/gtranslate-files/16.png');}
+-->
+</style><a href="javascript:doGTranslate('en|en')" title="English" class="gtflag" style="font-size:16px;padding:1px 0;background-repeat:no-repeat;background-position:-0px -0px;" role="link"><img src="/sites/all/modules/contributed/gtranslate/gtranslate-files/blank.png" height="16" width="16" style="border:0;vertical-align:top;" alt="English"></a> <a href="javascript:doGTranslate('en|hi')" title="Hindi" class="gtflag" style="font-size:16px;padding:1px 0;background-repeat:no-repeat;background-position:-500px -100px;" role="link"><img src="/sites/all/modules/contributed/gtranslate/gtranslate-files/blank.png" height="16" width="16" style="border:0;vertical-align:top;" alt="Hindi"></a>  <label for="gtranslate" class="notdisplay">Google Translate</label></div></div>
+        </div>
+    </div><div class="stqc-logo"><a target="_blank" title="STQC Certificate" href="https://main.mohfw.gov.in/sites/default/files/STQC.pdf" role="link"><img src="https://main.mohfw.gov.in/sites/all/modules/cmf/cmf_content/assets/images/cqw_logo.png" alt="STQC Certificate"></a></div></div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block.tpl.php' -->
+
+  </footer>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region--footer.tpl.php' -->
+
+
+<!-----------important event section--------------->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="sites/all/themes/dhfw/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="sites/all/themes/dhfw/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="sites/all/themes/dhfw/js/owl.carousel.js"></script>
+        <script src="sites/all/themes/dhfw/js/customejs.js"></script>
+		<script src="https://mib.gov.in/sites/all/themes/mib/js/mib-banner.js"></script>
+		<script type="text/javascript">
+
+
+jQuery(document).ready(function(){
+	/*
+jQuery('a[href^=http]').click(function(){
+alert("You are being redirected to an external link.");
+});*/
+
+ jQuery('a').click(function(event) { 
+		var url = jQuery(this).attr('href');
+		//alert(url);
+		pos=url.substring(0,1);
+		pos1=url.substring(0,10);		
+		var result=url.search("main.mohfw.gov.in");
+		if(result==-1 && pos!='/' && pos!='#' && pos1!='javascript')
+		{
+			alert("You are being redirected to an external link.");
+		}			
+	}); 
+
+ jQuery('.view-id-home_page_banner ul').fadeSlideShow(
+                {
+                  NextElementText: '>', // default text for next button
+                
+                    PrevElementText: '<',  
+                }
+                ).css('width', '100%');
+        jQuery(".ticker1").modernTicker({
+                effect : "scroll",
+                scrollInterval : 20,
+                transitionTime : 500,
+                autoplay : true
+        });
+         $('#fssPrev, #fssNext').fadeOut();
+         
+        $('#block-views-home-page-banner-block').hover(function(){ 
+            $('#fssPrev, #fssNext').fadeIn();
+        }, function(){
+            $('#fssPrev, #fssNext').fadeOut();
+        });
+		
+
+jQuery('nolink').contents().unwrap().wrap('<a class="sf-depth-1 menuparent sf-with-ul"/>');
+
+
+//  jQuery('.nav-wrapper  ul > li#menu-3769-1 > a').append( "<span class='sf-sub-indicator'> »</span>" );
+  //  jQuery('li#menu-3769-1 > a, #menu-4083-1  > a, #menu-3570-1 > a ').append( "<span class='sf-sub-indicator'> »</span>" );    
+  
+jQuery(".nav-wrapper ul li").each(function(a){
+          if(jQuery(this).find("ul").length>0)
+          {
+        jQuery(this).children("a").append( "<span class='sf-sub-indicator'> »</span>" );
+
+          }
+});
+});
+</script>
+
+ 
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/page--front.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--page-bottom.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+<script src="https://main.mohfw.gov.in/sites/all/modules/contributed/flexslider/assets/js/flexslider.load.js?ray2z4"></script>
+
+
+
+<!-- END OUTPUT from 'sites/all/themes/dhfw/templates/html.tpl.php' -->
+
+</header><div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div id="outerImageContainer" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a id="prevLink" title="Previous" href="#" role="link" style="padding-top: 10px;">Go to Previous</a><a id="nextLink" title="Next" href="#" role="link" style="padding-top: 10px;">Go to next</a></div></div><div id="loading"><a href="#" id="loadingLink" role="link">Link Loading</a></div></div>        <div id="imageDataContainer" class="clearfix" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a id="framePrevLink" title="Previous" href="#" role="link" style="padding-top: 10px;">Frame Previous Link</a><a id="frameNextLink" title="Next" href="#" role="link" style="padding-top: 10px;">Frame Next Link</a></div><a id="bottomNavClose" title="Close" href="#" role="link" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Bottom Navigation Close</a><a id="bottomNavZoom" href="#" role="link">Bottom Navigation Zoom</a><a id="bottomNavZoomOut" href="#" role="link">Bottom Navigation Zoom Out</a><a id="lightshowPause" title="Pause Slideshow" href="#" style="display: none;" role="link">Pause Light Show</a><a id="lightshowPlay" title="Play Slideshow" href="#" style="display: none;" role="link">Play Light Show</a></div></div>        </div>      </div><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body>
+
+
+{% endblock body %}
