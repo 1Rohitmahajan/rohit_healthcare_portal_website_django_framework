@@ -35,9 +35,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/homeservices">Home services</a></li>
             <li><a class="dropdown-item" href="/dieses">All dieses available </a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/listmedicine"> Medicine</a></li>
-            <li><a class="dropdown-item" href="/register"> Register</a></li>
             <li><a class="dropdown-item" href="/listmedicine"> Medicine</a></li>
           </ul>
         </li>
@@ -46,25 +43,25 @@
         </li>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-success" href="/register_patient"> Register & Login</a>
+          <a class="nav-link dropdown-toggle" href="/register_patient"> Register & Login</a>
         </li>
         
       </ul>
       <ul class="navbar-nav mr-2">
       <li class="nav-item ">
-      <a class="btn btn-outline-success" href='/doctor'  role="button" >Doctor-Login</a>            
+      <a class="nav-link dropdown-toggle" href='/doctor'  role="button" >Doctor-Login</a>            
       </div>
     </li>
   </ul>
   <ul class="navbar-nav mr-2">
       <li class="nav-item ">
-      <a class="btn btn-outline-primary" href='/insurance'  role="button" >Healthcare Insurance</a>            
+      <a class="nav-link dropdown-toggle" href='/insurance'  role="button" >Healthcare Insurance</a>            
       </div>
     </li>
   </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="nav-link dropdown-toggle" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -90,6 +87,7 @@
        
     {% block maincontent %} {% endblock maincontent %}
 
+    {% include 'footer.html' %}
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
