@@ -4,6 +4,7 @@ from django.contrib.auth.models import User, auth
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth import login, logout
 from datetime import datetime
+
 from django.contrib import messages
 from youcare.models import Cont, Doctor, patientappointment, Insurance
 # from youcare.models import Appointment
@@ -69,6 +70,14 @@ def contact1(request):
 def doctor(request):
     return render(request, 'doctor.html')
 
+def admin_approve_doctor(request):
+    return render(request,'admin_approve_doctor.html')
+
+def admin_view_doctor_specialisation(request):
+    return render(request,'admin_view_doctor_specialisation.html')
+
+def admin_view_doctor(request):
+    return render(request,'admin_view_doctor.html')
 
 def register_patient(request):
     return render(request, 'register_patient.html')
@@ -199,13 +208,23 @@ def admin_add_doctor_view(request):
 def patient_approve_appointment(request):
     p=patientappointment.objects.all()
     
-    return render(request, 'patient_approve_appointment.html')
+    return render(request, 'patient_approve_appointment.html',p)
 
 
-def patient_view_appointment(request,a):
+def patient_view_appointment(request):
     p=patientappointment.objects.all()
 
     data={
-        
+     'p': p
     }
     return render(request, 'patient_view_appointment.html',data)
+
+
+
+# def delete_appointment(request, appointment_id):
+#     appointment =(patientappointment, pk=appointment_id)
+
+#     if request.method == 'POST':
+#         appointment.delete()  
+#         return redirect('appointments_list')  
+#     return render(request, 'delete_appointment.html', {'appointment': appointment})

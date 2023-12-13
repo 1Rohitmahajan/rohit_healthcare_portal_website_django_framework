@@ -41,9 +41,14 @@ urlpatterns = [
     path('doctor', views.doctor, name="doctor"),
     path('admin_add__doctor', views.admin_add_doctor_view,
          name="admin_add__doctor"),
+
+    path('admin_approve_doctor',views.admin_approve_doctor,name='admin_approve_doctor'),
+
     path('patient_add_appointment', views.patient_add_appointment,
          name="patient_add_appointment"),
-
+    
+    path('admin_view_doctor_specialisation',views.admin_view_doctor_specialisation,name='admin_view_doctor_specialisation'),
+    path('admin_view_doctor',views.admin_view_doctor,name='admin_view_doctor.html'),
 
     path('insurance', views.insurance, name="insurance"),
     path('patient_view_appointment',

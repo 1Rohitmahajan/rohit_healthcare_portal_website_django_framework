@@ -20,7 +20,7 @@ class contact(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        return self.first_name
+        return self.name
 
 
 class Register(models.Model):
@@ -46,23 +46,10 @@ class Cont(models.Model):
         return self.name
 
 
-class patientappointment(models.Model):
-    first_name = models.CharField(null=False, blank=False, max_length=122)
-    last_name = models.CharField(null=False, blank=False, max_length=122)
-    phone = models.CharField(null=False, blank=False, max_length=12)
-    date = models.DateTimeField(auto_now=True)
-    age = models.CharField(null=False, blank=False, max_length=12)
-    dieses = models.CharField(null=False, blank=False, max_length=18)
-    address = models.CharField(null=False, blank=False, max_length=18)
-    symptoms = models.CharField(null=False, blank=False, max_length=18)
-    doctor_name = models.CharField(null=False, blank=False, max_length=18)
-
-    def __str__(self):
-        return self.first_name
-
 
 class Doctor(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    id=models.AutoField(primary_key=True)
+    user = models.CharField(max_length=50)
     profile_pic = models.ImageField(
         upload_to='profile_pic/DoctorProfilePic/', null=True, blank=True)
     address = models.CharField(max_length=40)
@@ -77,23 +64,13 @@ class Doctor(models.Model):
 
     @property
     def get_id(self):
-        return self.user.id
+        return self.id
 
     def __str__(self):
         return "{} ({})".format(self.user.first_name, self.department)
 
 
-class Insurance(models.Model):
-    name = models.CharField(max_length=122)
-    email = models.CharField(max_length=122)
-    phone = models.CharField(max_length=12)
-    rate = models.CharField(max_length=12)
-    desc = models.TextField(null=True, blank=True)
-    date = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.name
-class patient_view(models.Model):
+class patientappointment(models.Model):
     first_name = models.CharField(null=False, blank=False, max_length=122)
     last_name = models.CharField(null=False, blank=False, max_length=122)
     phone = models.CharField(null=False, blank=False, max_length=12)
@@ -102,7 +79,21 @@ class patient_view(models.Model):
     dieses = models.CharField(null=False, blank=False, max_length=18)
     address = models.CharField(null=False, blank=False, max_length=18)
     symptoms = models.CharField(null=False, blank=False, max_length=18)
-    doctor_name = models.CharField(null=False, blank=False, max_length=18)
+    doctor_name = models.OneToOneField(Doctor, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.first_name
+
+
+
+
+class Insurance(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.CharField(max_length=122)
+    phone = models.CharField(max_length=12)
+    rate = models.CharField(max_length=12)
+    desc = models.TextField(null=True, blank=True)
+    date = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name

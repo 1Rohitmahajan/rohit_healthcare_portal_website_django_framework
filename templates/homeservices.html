@@ -1,660 +1,153 @@
-
 {% extends 'base.html'%}
-{%block title%} homeservicesS {% endblock title%}
-{% block body %} 
-<head> <meta name="msvalidate.01" content="F1727DCC67EA817EC85978219ED3F740"> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Doctor consultation at Home | Care at Home</title> <meta name="description" content=" Care at Home "> <meta name="author" content=""> <meta name="google" value="notranslate"> <meta name="robots" content="index, follow"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-57x57.png"> <link rel="apple-touch-icon" sizes="60x60" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-60x60.png"> <link rel="apple-touch-icon" sizes="72x72" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="76x76" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-76x76.png"> <link rel="apple-touch-icon" sizes="114x114" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="120x120" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-120x120.png"> <link rel="apple-touch-icon" sizes="144x144" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-144x144.png"> <link rel="apple-touch-icon" sizes="152x152" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="https://www.carehome.in/ctd-static/ctd-new-img/apple-icon-180x180.png"> <link rel="icon" href="https://www.carehome.in/images/favicon.png" type="image/gif" sizes="16x16"> <link rel="manifest" href="https://www.carehome.in/ctd-static/ctd-new-img/manifest.json"> <meta name="msapplication-TileColor" content="#ffffff"> <meta name="msapplication-TileImage" content="https://www.carehome.in/ctd-static/ctd-new-img/ms-icon-144x144.png"> <meta name="theme-color" content="#ffffff"> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Slabo+27px" rel="stylesheet"> <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> <link rel="stylesheet" href="https://www.carehome.in/assets/plugins/datepicker/css/bootstrap-datepicker.min.css"> <link rel="stylesheet" href="https://www.carehome.in/assets/plugins/timepicker/jquery.timepicker.min.css"> <link rel="stylesheet" href="https://www.carehome.in/assets/plugins/selectpicker/css/bootstrap-select.css"> <link rel="stylesheet" href="https://www.carehome.in/assets/css/custom.css"> <link rel="stylesheet" href="https://www.carehome.in/assets/css/user_custom.css"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script src="https://connect.facebook.net/signals/config/308097093171533?v=2.9.61&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-788682560"></script> <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
+{%block title%} contact {% endblock title%}
+{% block body %}
 
- gtag('config', 'AW-788682560');
 
-</script> <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125660933-1"></script> <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
 
-   gtag('config', 'UA-125660933-1');
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Home Services</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for improved appearance */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
 
-   (function(i, s, o, g, r, a, m) {
-       i['GoogleAnalyticsObject'] = r;
-       i[r] = i[r] || function() {
-           (i[r].q = i[r].q || []).push(arguments)
-       }, i[r].l = 1 * new Date();
-       a = s.createElement(o),
-           m = s.getElementsByTagName(o)[0];
-       a.async = 1;
-       a.src = g;
-       m.parentNode.insertBefore(a, m)
-   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        .service-card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+        }
 
-   ga('create', 'UA-125660933-1', 'auto');
-   ga('send', 'pageview');
-  </script> <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '308097093171533');
-  fbq('track', 'PageView');
-</script> <noscript><img height="1" width="1" alt="fb" style="display:none" src="https://www.facebook.com/tr?id=308097093171533&ev=PageView&noscript=1" />
-</noscript>
- <script src="https://callcenter.carehome.in:8443/ameyochatjs/ameyo-emerge-chat.js"></script>
- <meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
- <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/788682560/?random=1653644372084&amp;cv=9&amp;fst=1653644372084&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=3&amp;u_tz=330&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oa5p1&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.carehome.in%2Fservices%2Fdoctor-at-home&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;tiba=Doctor%20consultation%20at%20Home%20%7C%20Care%20at%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4">
+        .hospital-info {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+        }
 
- </script>
-<style>
-  .services .home-banner .banner-text {
-    right: 0px;
-  }
+        .testimonial-card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+        }
 
-  .services .home-banner {
-    min-height: auto;
-  }
-
-  .services .home-banner img.serv_ban_img {
-    margin: 15px 0px 15px 0px;
-    border: 2px solid #fff;
-    max-height: 345px;
-  }
-
-  .services .home-banner .banner-text h1,
-  .services .home-banner .banner-text h2 {
-    padding-right: 0px;
-    /*padding-top: 20%;*/
-    padding-left: 10px;
-    text-align: left;
-  }
-
-  .services .home-banner .banner-text .form-block {
-    max-height: 270px;
-    height: 100%;
-    width: 100%;
-    background: Black;
-  }
-
-  .services .div_service_content ul,
-  .services .div_service_content p {
-    margin-bottom: 20px;
-  }
-  
-  .services .div_service_content ul {
-    margin-bottom : 0;
-  }
-
-  #err-header_lead-msg,
-  #err-lead_collection-msg {
-    color: #ff0000;
-  }
-
-  .modal .modal-content .box-border {
-    border: 3px solid #e8e8e8;
-    border-radius: 15px;
-    padding: 0px 20px;
-  }
-
-  .bd-example-modal-lg {
-    padding-right: 0px !important;
-  }
-
-  .services .div_service_content .landing_page_content h1,
-  .services .div_service_content .landing_page_content h2,
-  .services .div_service_content .landing_page_content h3,
-  .services .div_service_content .landing_page_content h4,
-  .services .div_service_content .landing_page_content h5,
-  .services .div_service_content .landing_page_content h6 {
-    color: #887bba;
-    text-transform: none;
-    font-weight: bold;
-    font-family: 'opensansBold';
-  }
-
-  .services .div_service_content .landing_page_content h1 {
-    font-size: 26px;
-  }
-
-  .services .div_service_content .landing_page_content h2 {
-    font-size: 24px;
-  }
-
-  .services .div_service_content .landing_page_content h3 {
-    font-size: 22px;
-  }
-
-  .services .div_service_content .landing_page_content h4 {
-    font-size: 20px;
-  }
-
-  .services .div_service_content .landing_page_content h5 {
-    font-size: 18px;
-  }
-
-  .services .div_service_content .landing_page_content h6 {
-    font-size: 16px;
-  }
-
-  .services h2.serv_title {
-    color: #fff;
-  }
-
-  @media(max-width: 991px) {
-    .services .home-banner img.serv_ban_img {
-      min-height: auto;
-    }
-
-    .services .home-banner .banner-text h1,
-    .services .home-banner .banner-text h2 {
-      padding-top: 15px;
-      text-align: center;
-      align-self: center;
-      line-height: normal;
-    }
-  }
-
-  @media(max-width: 567px) {
-    .services .home-banner img.serv_ban_img {
-      min-height: auto;
-    }
-
-    .services .home-banner .banner-text h1,
-    .services .home-banner .banner-text h2 {
-      padding-top: 0px;
-      text-align: center;
-      align-self: center;
-      line-height: normal;
-    }
-
-    .services h2 {
-      font-size: 18px;
-    }
-  }
-
-  .m-l-80 {
-    margin-left: 80px;
-  }
-
-  .m-l-40 {
-    margin-left: 40px;
-  }
-
-  .p-t-40 {
-    padding-top: 40px;
-  }
-
-  .p-b-40 {
-    padding-bottom: 40px;
-  }
-</style>
+        .contact-form {
+            margin-top: 30px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+        }
+    </style>
 </head>
-<div class="services"> <div class="home-banner"> <div class="container"> <div class="col-md-12 row p-t-40 p-b-40 no-p-sm"> <div class="col-md-5 col-5 order-1 m-l-80 no-m-sm"> <img src="https://www.carehome.in/images/family-doctor-banner.jpg" alt="Specialist banner" class="serv_ban_img "> </div> <div class="col-md-5 col-7 order-2 m-l-40 no-m-sm no-p-sm"> <div class="col-md-12 p-0"> <div class="col-md-12"> <h2 class="serv_title">Doctor consultation at Home</h2> </div> <div class="col-md-10 col-xs-12 form-block d-none d-sm-none d-md-none d-lg-block d-xl-block"> <form class="form new_serv_form" id="header_leadForm"> <div class="form-group"> <input type="text" class="form-control " placeholder="Name" id="header_lead_name" name="header_lead_name" value=""> </div> <div class="form-group"> <input type="text" class="form-control " placeholder="Phone" id="header_lead_mobile" name="header_lead_mobile" value="" onkeypress="return (event.charCode >= 48 &amp;&amp; event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 9" maxlength="10" minlength="10" min="0"> </div> <div class="form-group"> <input type="text" class="form-control " placeholder="Email" id="header_lead_email" name="header_lead_email" value=""> </div> <div class="form-group"> <input type="hidden" name="service_speciality" value="17"> <select class="form-control " id="header_lead_service" name="header_lead_service"> <option value="" style="color:#8877ba;">Select Services</option> <option value="17|1" style="color:#8877ba" selected="">                       Doctor Consultation at Home
-                                          </option> </select> </div> <div class="text-left"> <p id="err-header_lead-msg"></p> </div> <div class="form-group text-left mb-0"> <button class="btn btn-primary btn-sm" type="button" id="user-header_lead-info" onclick="getLeadInfo('header_lead','www.carehome.in/services/doctor-at-home')">Enquire
-                    Now</button> </div> </form> </div> </div> </div> </div> </div> </div> <div class="container"> <div class="float-right d-none d-sm-block"> </div> <div class="clearfix"></div> <div class="row mt-65 mb-90"> <div class=" col-lg-9 col-md-9 col-sm-12 col-12 mb-85 div_service_content"> <div class="box-border"> <div class="box-border-img doctor float-left"> <img src="https://www.carehome.in/images/family-doctor-banner.jpg" alt="Specialist at Home"> </div> <div class="clearfix"></div> <div class="landing_page_content"> <h1>Doctor at Home</h1><p>CARE at HOME is a home healthcare service provider with a difference. The core purpose is to deliver 'Healthcare outside hospitals' in the right way. The main focus is on clinical excellence coupled with superior patient experience at an affordable cost.</p> <h4><strong>Family Doctor</strong></h4> <p>Our family doctor visits the patient at home to review the health status, recommend diagnostics, formulate a treatment plan and refer them to a specialist, if required.</p> <p>The family doctor can suggest if a particular treatment is suitable for being given at home. They may refer the patient for home treatment whilst keeping them under supervision at all times.</p> <p>You can avail doctor visits for:</p> <ul> <li>Regular health check-ups that help identify the effectiveness of medications administered and early identification of complications.&nbsp;</li> </ul> <ul> <li>When the patient is suffering from fever, cold, cough and other common medical conditions, the doctor’s home visit will reduce the stress of visiting a hospital and waiting for a doctor consultation.</li> <li>Death certification</li> </ul> <h4><strong>Who will benefit</strong></h4> <ul> <li>Patients suffering from chronic diseases like diabetes, heart disease and hypertension</li> <li>Patients suffering from seasonal flu, acute diseases, etc</li> <li>Elderly and bedbound patients who find it difficult to travel to the hospital</li> </ul> <h4><strong>Benefits of at-home doctor service</strong></h4> <ul> <li>With today’s highly busy lifestyle at-home doctor service is becoming the norm of the day. Not only does the doctor on call service save time, it is also convenient to make a booking online.&nbsp;</li> </ul> <h4><strong>Few benefits of doctor visit at home</strong></h4> <ul> <li>The first benefit is the availability of quality medical care in the comfort of your home.</li> <li>The consultation charges are lower or at par with the hospital visit charges, so you not only save on travelling but also on medical bills.</li> <li>The home doctor gives more personal medical care to the patient and is more empathetic.</li> <li>Not all illnesses need hospitalization, but owing to lack of support at home, patients end up in nursing homes and hospitals for medical care. It is in those cases that the home visit doctor proves to be highly beneficial, as they can easily provide medical attention at home.</li> <li>The doctor on call service is available 24*7; hence, you are guaranteed quality healthcare even at odd hours and on any given day.</li> <li>Home visit doctors are a boon for old people, as they are the ones who need medical attention the most and are also the ones who have the most difficulty in travelling.<strong>&nbsp;</strong></li> </ul> <h4><strong>What to expect from at-home doctor service</strong></h4> <ul> <li>The chief purpose is to provide primary diagnostics and, if and when needed, prescribe blood, urine and/or other tests. The entire service is designed to provide primary healthcare, post hospitalisation care and chronic disease management,as also allied services in the comfort of a patient’s home.&nbsp;</li> </ul> <h4><strong>How to prepare for at-home doctor service</strong></h4> <p>To help make your first doctor visit at home go smoothly here are a few pointers:</p> <ul> <li>Give proper briefing about your medical history and current medical needs, to help the doctor make an accurate diagnosis and prescribe appropriate medication or the right course of action.</li> <li>Ask a family member to be present when the doctor visits to help answer all the questions.</li> <li>Keep all the prescriptions handy as you would need to show them to the doctor.</li> <li>Have your regular or specialty doctor information handy.</li> <li>Also keep your hospital discharge papers ready, if any.</li> <li>Wear loose and comfortable clothing as the doctor might perform a comprehensive exam.</li> </ul> </div> <div class="modal fade bd-example-modal-lg" id="session-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <div class="modal-dialog modal-fs"> <div class="modal-content"> <div class="row"> <div class="col-lg-10 col-md-10 col-sm-10 col-10 offset-lg-1 offset-md-1 offset-sm-1 offset-1"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button> <div class="box-border mt-75 mb-75"> <div class="clearfix"></div> <div class="mt-60"> <h2 class="text-center">
-                                                    Doctor Consultation At Home
-                                                  </h2> <div class="tabs mt-20"> <div class="tab-content margin-40" id="pills-tabContent"> <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div id="user-details"> <form id="user-details-form"> <div class="form-group"> <div class="row"> <label class="col-sm-2 col-form-label">Name: *</label> <div class="col-sm-10"> <input type="text" class="form-control" id="name" name="name" value=""> <input type="hidden" class="form-control" id="isSpec" name="isSpec" value="17"> <input type="hidden" class="form-control" id="isServ" name="isServ" value=""> </div> </div> </div> <div class="form-group"> <div class="row"> <div class="col-sm-6"> <div class="row"> <label class="col-sm-4 col-form-label">Mobile: *</label> <div class="col-sm-8"> <input type="text" class="form-control" id="mobile" name="mobile" value="" onkeypress="return (event.charCode >= 48 &amp ;&amp; event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 9" maxlength="10" minlength="10" min="0"> </div> </div> </div> <div class="col-sm-6"> <div class="row"> <label class="col-sm-3 col-form-label">Email: *</label> <div class="col-sm-9"> <input type="email" class="form-control" id="email" name="email" value=""> </div> </div> </div> </div> </div> <div class="form-group"> <div class="row"> <label class="col-sm-2 col-form-label">Address: *</label> <div class="col-sm-10"> <textarea class="form-control" id="address" name="address" rows="3" value=""></textarea> </div> </div> </div> <div class="form-group"> <div class="row"> <div class="col-sm-6"> <div class="row"> <label class="col-sm-4 col-form-label">City: *</label> <div class="col-sm-8"> <input type="text" class="form-control" id="city" name="city" value=""> </div> </div> </div> <div class="col-sm-6"> <div class="row"> <label class="col-sm-3 col-form-label np-right-0">Pincode: *</label> <div class="col-sm-9"> <input type="number" class="form-control" id="pincode" name="pincode" value=""> </div> </div> </div> </div> </div> <div class="row"> <div class="col-sm-12"> <div class="text-center mt-20"> <p id="err-msg"></p> </div> </div> </div> <div class="row"> <div class="col-sm-12"> <div class="float-right mt-20"> <button type="button" onclick="openSF('user-details','transactional','17')" class="btn btn-primary" id="user-info">
-                                        Next
-                                    </button> </div> </div> </div> </form> </div> <div id="service-details" style="display: none"></div> </div> </div> </div> <script>
-function openSF(utype, stype, sid) {
-    var name = $("#name").val();
-    var mobile = $("#mobile").val();
-    var email = $("#email").val();
-    var address = $("#address").val();
-    var city = $("#city").val();
-    var pincode = $("#pincode").val();
-    $("#user-info").prop("disabled", true);
 
-    if (name.trim() == '') {
-        $("#err-msg").html('Please enter name');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (mobile.trim() == '') {
-        $("#err-msg").html('Please enter mobile');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (email.trim() == '') {
-        $("#err-msg").html('Please enter email');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (address.trim() == '') {
-        $("#err-msg").html('Please enter address');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (city.trim() == '') {
-        $("#err-msg").html('Please enter city');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (pincode.trim() == '') {
-        $("#err-msg").html('Please enter pincode');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else {
+<body>
 
+    <div class="container">
 
-        var data = $("#user-details-form").serializeObject();
+        <!-- Hospital Information -->
+        <div class="hospital-info">
+            <h2>Welcome to Our Hospital</h2>
+            <p>We provide home healthcare services to cater to your medical needs.</p>
+            <p>Contact us for professional and reliable home healthcare assistance.</p>
+            <p><strong>Address:</strong> 123 Hospital Street, City, Country</p>
+            <p><strong>Phone:</strong> +1 123-456-7890</p>
+        </div>
 
-        data.action = 'user-details';
-        data.userTypeID = '1';
-        data.spec_id = sid;
-        data.type = stype;
-        data.skip = '0';
-        $('.loader').show();
-        jQuery.ajax({
-            type: 'POST',
-            url: "https://www.carehome.in/services_ajax.php",
-            data: {data:data},
-            success: function(response) {
-                // console.log(typeof response);
-                // console.log(response);
-                var response = JSON.parse(response);              
+        <!-- Services Section -->
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nursing Care</h5>
+                        <p class="card-text">Professional nursing services at home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Physiotherapy</h5>
+                        <p class="card-text">Physical therapy sessions at your convenience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Equipment</h5>
+                        <p class="card-text">Supply of necessary medical equipment to your home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                if(response.success == false) {
-                    $("#err-msg").html(response.msg);
-                    $("#user-info").prop("disabled", false);
-                    return false;
-                } else {
-                    document.getElementById("user-details").style.display = "none";
-                    $("#service-details").html(response.tpl);
-                    document.getElementById("service-details").style.display = "block";
-                    $("#hidden_sid").val(response.sid);
-                    ga('send','event','Lead','Form','Submit');
-                    if(response.adwords == 1)
-                    {
-                        gtag('event', 'conversion', {'send_to': 'AW-788682560/3tFgCNmw34kBEMCuifgC'});
-                    }else if(response.adwords == 2){
-                                    
-                        fbq('track', 'Lead');
-                    }
-                }
-                $('.loader').hide();
-            }
-        });
-    }
+        <!-- Testimonials Section -->
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>"Exceptional service! The nursing staff was caring and professional."</p>
+                    <p><em>- John Doe</em></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>"The physiotherapy sessions greatly helped in my recovery. Highly recommended."</p>
+                    <p><em>- Jane Smith</em></p>
+                </div>
+            </div>
+        </div>
 
-}
+        <!-- Contact Form -->
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
 
-function saveLeadOnly(utype, stype, sid) {
-    var name = $("#name").val();
-    var mobile = $("#mobile").val();
-    var email = $("#email").val();
-    var address = $("#address").val();
-    var city = $("#city").val();
-    var pincode = $("#pincode").val();
+    </div>
 
+    <!-- Bootstrap JS and jQuery (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    $("#user-info").prop("disabled", true);
-    if (name.trim() == '') {
-        $("#err-msg").html('Please enter name');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (mobile.trim() == '') {
-        $("#err-msg").html('Please enter mobile');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (email.trim() == '') {
-        $("#err-msg").html('Please enter email');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (address.trim() == '') {
-        $("#err-msg").html('Please enter address');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (city.trim() == '') {
-        $("#err-msg").html('Please enter city');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else if (pincode.trim() == '') {
-        $("#err-msg").html('Please enter pincode');
-        $("#user-info").prop("disabled", false);
-        return false;
-    } else {
-
-        var data = $("#user-details-form").serializeObject();
-
-        data.action = 'user-details';
-        data.userTypeID = '1';
-        data.spec_id = sid;
-        data.type = stype;
-        data.skip = '1';
-        $('.loader').show()
-        jQuery.ajax({
-                type: 'POST',
-                url: "https://www.carehome.in/services_ajax.php",
-                data: {data:data},
-                dataType: "text",
-                success: function(data) {
-
-                    data = JSON.parse(data);
-
-                    if (data.success == false) {
-                        $("#err-msg").html(data.msg);
-                        $("#user-info").prop("disabled", false);
-                        return false;
-                    } else {
-                        
-                        $('#session-modal').modal('hide');
-                        document.getElementById("user-details-form").reset();
-                        $("#user-info").prop("disabled", false);
-                        $('#err-msg').html('');
-                        $('#message').html(data.msg);
-                        $('#msg-modal').modal('show');
-
-                        ga('send','event','Lead','Form','Submit');
-                        if(data.adwords == 1)
-                        {
-                            gtag('event', 'conversion', {'send_to': 'AW-788682560/3tFgCNmw34kBEMCuifgC'});
-                        }else if(data.adwords == 2){
-                                    
-                            fbq('track', 'Lead');
-                        }
-                    }
-                    $('.loader').hide();
-                }
-            });
-    }
-}
+</html>
 
 
 
-</script> </div> </div> </div> </div> </div> </div> </div> </div> <div class="clearfix"></div> <div class="mt-40"> </div> <div class="text-center mt-40"> <button type="button" data-toggle="modal" data-target="#session-modal" class="btn btn-primary mt-40">
-            Enquire Now
-          </button> </div> </div> <style>
-        .related_services_box {
-          text-align: center;
-          margin-bottom: 20px;
-          /*border: 3px solid #ccc;*/
-          /*border-radius: 15px;*/
-          /*padding: 30px 15px;*/
-        }
 
-        .related_services_box .card {
-          border: 0px;
-          margin-bottom: 10px;
-        }
-
-        .related_services_box .card .card-body {
-          padding: 0px;
-          margin-top: 3px;
-        }
-
-        .related_services_box .card-img-top {
-          border-radius: 0px;
-        }
-
-        .related_services_box .card-img {
-          min-height: 200px;
-          height: 175px;
-          width: 175px;
-          margin: 0 auto;
-          display: inline-flex;
-          align-items: center;
-          flex-direction: column-reverse;
-          margin-bottom: 20px;
-        }
-
-        .related_services_box h3 {
-          font-size: 18px;
-          word-break: break-word;
-          color: #8877ba;
-          margin-bottom: 10px;
-        }
-
-        .related_services_box .actions .btn_know_more {
-          font-size: 14.5px !important;
-          padding: 3px 20px !important;
-        }
-
-        p#err-header_lead2-msg {
-          color: #ff0000;
-        }
-
-
-        .services .home-banner {
-          background: url(../static/th.jpg);
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-        .new_serv_form {
-          margin-top: 40px;
-        }
-
-        .new_serv_form .form-control {
-          background: transparent;
-          border: 1px solid #fff;
-          border-radius: 2px;
-          color: #fff;
-          padding: .3rem .75rem;
-        }
-
-        .new_serv_form input::placeholder {
-          /* Firefox, Chrome, Opera */
-          color: #fff;
-        }
-
-
-        @media(max-width:767px) {
-          .related_services_box .card {
-            border: 0px;
-            margin-bottom: 0px;
-          }
-
-          .no-m-sm {
-            margin-left: 0px;
-          }
-
-          .no-p-sm {
-            padding: 0px;
-          }
-
-          .related_services_box .card .card-body {
-            margin-top: 5px;
-          }
-
-          .related_services_box .card-img {
-            margin-bottom: 0px;
-          }
-
-        }
-      </style> <script type="text/javascript">
-        $(document).ready(function () {
-
-          $.fn.serializeObject = function () {
-            var o = {};
-            var a = this.serializeArray();
-            $.each(a, function () {
-              if (o[this.name]) {
-                if (!o[this.name].push) {
-                  o[this.name] = [o[this.name]];
-                }
-                o[this.name].push(this.value || '');
-              } else {
-                o[this.name] = this.value || '';
-              }
-            });
-            return o;
-          };
-        });
-
-
-
-        /*function NewLeadInfoDeskTop(type,specid,sourceurl) {
-
-            var name = $("#header_lead_name").val();
-            var mobile = $("#header_lead_ph").val();
-            //$("#user-header_lead-info").prop("disabled", true);
-
-            if (name.trim() == '') {
-                $("#err-header_lead-msg").html('Please enter name');
-                $("#user-header_lead-info").prop("disabled", false);
-                return false;
-            } else if (mobile.trim() == '') {
-                $("#err-header_lead-msg").html('Please enter mobile number');
-                $("#user-header_lead-info").prop("disabled", false);
-                return false;
-            } else {
-
-
-              var data = $("#header_leadForm").serializeObject();
-
-                data.action = 'user-details';
-                data.userTypeID = '2';
-
-                data.spec_id = '17';
-                data.type = 'transactional';
-                data.skip = '1';
-
-                data.name = name;
-                data.mobile = mobile;
-
-
-                jQuery.ajax({
-                        type: 'POST',
-                        url: "https://www.carehome.in/services_ajax.php",
-                        data: {data:data},
-                        success: function(response) {
-                            response = JSON.parse(response);
-                            if (response.success == false) {
-                                $("#err-header_lead-msg").html(response.msg);
-                                $("#user-header_lead-info").prop("disabled", false);
-                                return false;
-                            } else {
-                                document.getElementById("header_leadForm").reset();
-                                $("#user-header_lead-info").prop("disabled", false);
-                                $('#err-header_lead-msg').html('');
-                                $('#message').html(response.msg);
-                                $('#msg-modal').modal('show');
-                              ga('send','event','Lead','Form','Submit');
-                                  if(response.adwords == 1)
-                              {
-                                  gtag('event', 'conversion', {'send_to': 'AW-788682560/3tFgCNmw34kBEMCuifgC'});
-                              }
-                            }
-                        }
-                    });
-            }
-        }
-
-        function NewLeadInfoMobile(type,specid,sourceurl) {
-
-            var name = $("#lead_collection_name").val();
-            var mobile = $("#lead_collection_ph").val();
-            $("#user-lead_collection-info").prop("disabled", true);
-
-            if (name.trim() == '') {
-                $("#err-lead_collection-msg").html('Please enter name');
-                $("#user-lead_collection-info").prop("disabled", false);
-                return false;
-            } else if (mobile.trim() == '') {
-                $("#err-lead_collection-msg").html('Please enter mobile number');
-                $("#user-lead_collection-info").prop("disabled", false);
-                return false;
-            } else {
-
-
-              var data = $("#lead_collectionForm").serializeObject();
-
-                data.action = 'user-details';
-                data.userTypeID = '2';
-
-                data.spec_id = '17';
-                data.type = 'transactional';
-                data.skip = '1';
-
-                data.name = name;
-                data.mobile = mobile;
-
-
-                jQuery.ajax({
-                        type: 'POST',
-                        url: "https://www.carehome.in/services_ajax.php",
-                        data: {data:data},
-                        success: function(response) {
-                            response = JSON.parse(response);
-                            if (response.success == false) {
-                                $("#err-lead_collection-msg").html(response.msg);
-                                $("#user-lead_collection-info").prop("disabled", false);
-                                return false;
-                            } else {
-                                document.getElementById("lead_collectionForm").reset();
-                                $("#user-lead_collection-info").prop("disabled", false);
-                                $('#err-lead_collection-msg').html('');
-                                $('#message').html(response.msg);
-                                $('#msg-modal').modal('show');
-                              ga('send','event','Lead','Form','Submit');
-                                  if(response.adwords == 1)
-                              {
-                                  gtag('event', 'conversion', {'send_to': 'AW-788682560/3tFgCNmw34kBEMCuifgC'});
-                              }
-                            }
-                        }
-                    });
-            }
-        }*/
-      </script> <div class="col-lg-3 col-md-12 col-sm-12 col-12 rhs-pd-left"> <div class="box-border-rhs"> <p class="text-head text-center">
-            For a Virtual/Tele-Consultation,
-            <span>begin here.</span> </p> <div class="mt-15"> <form id="rhsForm"> <div class="form-group"> <input type="text" class="form-control form-control-lg" placeholder="Name*" id="rhs_name" name="rhs_name" value=""> </div> <div class="form-group"> <input type="email" class="form-control form-control-lg" placeholder="Email Address" id="rhs_email" name="rhs_email" value=""> </div> <div class="form-group"> <input type="text" class="form-control form-control-lg" placeholder="Mobile*" id="rhs_mobile" name="rhs_mobile" value="" onkeypress="return (event.charCode >= 48 &amp;&amp; event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 9" maxlength="10" minlength="10" min="0"> </div> <div class="form-group"> <input type="text" class="form-control form-control-lg" placeholder="City" id="rhs_city" name="rhs_city" value=""> </div> <div class="text-center"> <p id="err-rhs-msg"></p> </div> <div class="text-center"> <button type="button" class="btn btn-primary mt-10" onclick="getLeadInfo('rhs','www.carehome.in/services/doctor-at-home')" id="user-rhs-info">
-                Submit
-              </button> </div> </form> </div> <hr> <h3 class="text-center">Patients Speak</h3> <div class="rhs-slider mt-15 slick-initialized slick-slider slick-dotted"> <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5616px; transform: translate3d(-1248px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-4.jpg" alt="Y V Ramana"> <p class="tsm-text text-center mt-15">
-                  I am a stroke patient. Off late I was unable to perform my daily activities. I have been taking the services of Care at Home for the past 4 months. Home Health Aide Kalyan is taking care of me meticulously, he understands my needs and assists me efficiently. I highly recommend Care at Home services.
-                </p> </div> </div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 624px;" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-1.png" alt="Specialist at Home"> <p class="tsm-text text-center mt-15">
-                  Today I completed one month of my weight loss journey with nutritionist Priyanka Verma. It has been a very satisfying experience. I found Priyanka to be very knowledgable and helpful throughout my journey. I have regained confidence and now worry less about my weight issues.
-                </p> </div> </div><div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 624px;" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-2.jpg" alt="Nikat Parveen"> <p class="tsm-text text-center mt-15">
-                  My Mother underwent  a surgery &amp; Dr. Suhasini (Physiotherapist) from CARE at HOME has been great in helping her emotionally &amp; physically. Physiotherapy has been excellent, all thanks to the team. My mother has shown tremendous improvement in the past 2 months. I Would definitely recommend CARE at HOME services  to others who are in need.
-                </p> </div> </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 624px;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-3.jpg" alt="Uma Bhasker"> <p class="tsm-text text-center mt-15">
-                  I am taking the Care at Home services from the last 3 months. Home Health Aides Sowjanya and Kalyani takes care of me very nicely. They are empathetic to my needs and helped me to recover soon. Excellent service by Care at Home!!
-                </p> </div> </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 624px;" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-4.jpg" alt="Y V Ramana"> <p class="tsm-text text-center mt-15">
-                  I am a stroke patient. Off late I was unable to perform my daily activities. I have been taking the services of Care at Home for the past 4 months. Home Health Aide Kalyan is taking care of me meticulously, he understands my needs and assists me efficiently. I highly recommend Care at Home services.
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-1.png" alt="Specialist at Home"> <p class="tsm-text text-center mt-15">
-                  Today I completed one month of my weight loss journey with nutritionist Priyanka Verma. It has been a very satisfying experience. I found Priyanka to be very knowledgable and helpful throughout my journey. I have regained confidence and now worry less about my weight issues.
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-2.jpg" alt="Nikat Parveen"> <p class="tsm-text text-center mt-15">
-                  My Mother underwent  a surgery &amp; Dr. Suhasini (Physiotherapist) from CARE at HOME has been great in helping her emotionally &amp; physically. Physiotherapy has been excellent, all thanks to the team. My mother has shown tremendous improvement in the past 2 months. I Would definitely recommend CARE at HOME services  to others who are in need.
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-3.jpg" alt="Uma Bhasker"> <p class="tsm-text text-center mt-15">
-                  I am taking the Care at Home services from the last 3 months. Home Health Aides Sowjanya and Kalyani takes care of me very nicely. They are empathetic to my needs and helped me to recover soon. Excellent service by Care at Home!!
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto" src="https://www.carehome.in/images/testimonials-4.jpg" alt="Y V Ramana"> <p class="tsm-text text-center mt-15">
-                  I am a stroke patient. Off late I was unable to perform my daily activities. I have been taking the services of Care at Home for the past 4 months. Home Health Aide Kalyan is taking care of me meticulously, he understands my needs and assists me efficiently. I highly recommend Care at Home services.
-                </p> </div> </div></div></div>    <ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4" tabindex="-1">1</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 4" tabindex="0" aria-selected="true">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 4" tabindex="-1">4</button></li></ul></div> </div> <div class="box-border-rhs mt-20"> <h3 class="text-center">Other Services</h3> <div class="rhs-slider2 mt-15 slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button> <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 11856px; transform: translate3d(-3744px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/medical-equipment.png" alt="Medical Equipment - Rent / Sale at home"> <h5 class="text-center mt-10"><a class="" href="/services/medical-equipment-at-home" alt="Medical Equipment - Rent / Sale at home" tabindex="-1">Medical Equipment - Rent / Sale at home</a></h5> <p class="tsm-text text-center mt-5">
-                  Reasonable and reliable equipment on hire/sale
-                </p> </div> </div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/home-quarantine.png" alt="COVID Management"> <h5 class="text-center mt-10"><a class="" href="/services/covid-19-management" alt="COVID Management" tabindex="-1">COVID Management</a></h5> <p class="tsm-text text-center mt-5">
-                  24*7 covid-19 Home quarantine support program by experienced doctors and nurses 
-                </p> </div> </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/doctor.png" alt="Specialist at Home"> <h5 class="text-center mt-10"><a class="" href="/services/specialist-at-home" alt="Specialist at Home" tabindex="-1">Specialist at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Ensuring continuum of care through specialist visits
-                </p> </div> </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/nurse.png" alt="Specialty Nursing"> <h5 class="text-center mt-10"><a class="" href="/services/nursing-at-home" alt="Specialty Nursing" tabindex="-1">Specialty Nursing</a></h5> <p class="tsm-text text-center mt-5">
-                  Specialty nursing for recovery phase
-                </p> </div> </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/physio.png" alt="Physiotherapist at Home"> <h5 class="text-center mt-10"><a class="" href="/services/physiotherapy-at-home" alt="Physiotherapist at Home" tabindex="-1">Physiotherapist at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Expert Physiotherapy treatment at Home
-                </p> </div> </div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/icu.png" alt="ICU at Home"> <h5 class="text-center mt-10"><a class="" href="/services/icu-at-home" alt="ICU at Home" tabindex="-1">ICU at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Multidisciplinary critical care at home
-                </p> </div> </div><div class="slick-slide slick-current slick-active" data-slick-index="5" aria-hidden="false" style="width: 624px;" tabindex="0"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/diagnostics.png" alt="Lab Tests at Home"> <h5 class="text-center mt-10"><a class="" href="/services/diagnostics-at-home" alt="Lab Tests at Home" tabindex="0">Lab Tests at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Advanced Diagnostic Services at Home
-                </p> </div> </div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/home-health-aide.png" alt="Home Health Aide Services by Experts"> <h5 class="text-center mt-10"><a class="" href="/services/home-health-aide-at-home" alt="Home Health Aide Services by Experts" tabindex="-1">Home Health Aide Services by Experts</a></h5> <p class="tsm-text text-center mt-5">
-                  Assistance in daily activities and personal care
-                </p> </div> </div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/family-doctor.png" alt="Doctor Consultation at Home"> <h5 class="text-center mt-10"><a class="" href="/services/doctor-at-home" alt="Doctor Consultation at Home" tabindex="-1">Doctor Consultation at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Comprehensive treatment and management
-                </p> </div> </div><div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/medical-equipment.png" alt="Medical Equipment - Rent / Sale at home"> <h5 class="text-center mt-10"><a class="" href="/services/medical-equipment-at-home" alt="Medical Equipment - Rent / Sale at home" tabindex="-1">Medical Equipment - Rent / Sale at home</a></h5> <p class="tsm-text text-center mt-5">
-                  Reasonable and reliable equipment on hire/sale
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/home-quarantine.png" alt="COVID Management"> <h5 class="text-center mt-10"><a class="" href="/services/covid-19-management" alt="COVID Management" tabindex="-1">COVID Management</a></h5> <p class="tsm-text text-center mt-5">
-                  24*7 covid-19 Home quarantine support program by experienced doctors and nurses 
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/doctor.png" alt="Specialist at Home"> <h5 class="text-center mt-10"><a class="" href="/services/specialist-at-home" alt="Specialist at Home" tabindex="-1">Specialist at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Ensuring continuum of care through specialist visits
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/nurse.png" alt="Specialty Nursing"> <h5 class="text-center mt-10"><a class="" href="/services/nursing-at-home" alt="Specialty Nursing" tabindex="-1">Specialty Nursing</a></h5> <p class="tsm-text text-center mt-5">
-                  Specialty nursing for recovery phase
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/physio.png" alt="Physiotherapist at Home"> <h5 class="text-center mt-10"><a class="" href="/services/physiotherapy-at-home" alt="Physiotherapist at Home" tabindex="-1">Physiotherapist at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Expert Physiotherapy treatment at Home
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/icu.png" alt="ICU at Home"> <h5 class="text-center mt-10"><a class="" href="/services/icu-at-home" alt="ICU at Home" tabindex="-1">ICU at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Multidisciplinary critical care at home
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/diagnostics.png" alt="Lab Tests at Home"> <h5 class="text-center mt-10"><a class="" href="/services/diagnostics-at-home" alt="Lab Tests at Home" tabindex="-1">Lab Tests at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Advanced Diagnostic Services at Home
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/home-health-aide.png" alt="Home Health Aide Services by Experts"> <h5 class="text-center mt-10"><a class="" href="/services/home-health-aide-at-home" alt="Home Health Aide Services by Experts" tabindex="-1">Home Health Aide Services by Experts</a></h5> <p class="tsm-text text-center mt-5">
-                  Assistance in daily activities and personal care
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/family-doctor.png" alt="Doctor Consultation at Home"> <h5 class="text-center mt-10"><a class="" href="/services/doctor-at-home" alt="Doctor Consultation at Home" tabindex="-1">Doctor Consultation at Home</a></h5> <p class="tsm-text text-center mt-5">
-                  Comprehensive treatment and management
-                </p> </div> </div><div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 624px;" tabindex="-1"> <div class="box"> <img class="mx-auto services" src="https://www.carehome.in/images/medical-equipment.png" alt="Medical Equipment - Rent / Sale at home"> <h5 class="text-center mt-10"><a class="" href="/services/medical-equipment-at-home" alt="Medical Equipment - Rent / Sale at home" tabindex="-1">Medical Equipment - Rent / Sale at home</a></h5> <p class="tsm-text text-center mt-5">
-                  Reasonable and reliable equipment on hire/sale
-                </p> </div> </div></div></div>         <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div> </div> </div> </div> </div> </div>
-{% endblock body %}
-
-
+{% endblock body%}
