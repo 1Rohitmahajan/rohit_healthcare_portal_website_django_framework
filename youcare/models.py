@@ -39,7 +39,7 @@ class Cont(models.Model):
     name = models.CharField(max_length=122)
     email = models.CharField(max_length=122)
     phone = models.CharField(max_length=12)
-    desc = models.TextField(null=True, blank=True)
+    desc = models.TextField(null=False, blank=True)
     date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -48,8 +48,8 @@ class Cont(models.Model):
 
 
 class Doctor(models.Model):
-    id=models.AutoField(primary_key=True)
-    user = models.CharField(max_length=50)
+    id = models.AutoField(primary_key=True)
+    doctor_name = models.CharField(max_length=100)  # Field for the doctor's name
     profile_pic = models.ImageField(
         upload_to='profile_pic/DoctorProfilePic/', null=True, blank=True)
     address = models.CharField(max_length=40)
@@ -58,31 +58,39 @@ class Doctor(models.Model):
         max_length=50, choices=departments, default='Cardiologist')
     status = models.BooleanField(default=False)
 
-    @property
-    def get_name(self):
-        return self.user.first_name+" "+self.user.last_name
-
-    @property
-    def get_id(self):
-        return self.id
-
     def __str__(self):
-        return "{} ({})".format(self.user.first_name, self.department)
+        return f"{self.doctor_name} ({self.department})"
 
 
-class patientappointment(models.Model):
+
+class PatientAppointment(models.Model):
+
+    STATUS_CHOICES = [
+        ('Pending', 'Pending'),
+        ('Approved', 'Approved'),
+        ('Rejected', 'Rejected'),
+    ]
+    # Fields for patient information
+    id = models.AutoField(primary_key=True)
     first_name = models.CharField(null=False, blank=False, max_length=122)
     last_name = models.CharField(null=False, blank=False, max_length=122)
     phone = models.CharField(null=False, blank=False, max_length=12)
-    date = models.DateTimeField(auto_now=True)
     age = models.CharField(null=False, blank=False, max_length=12)
-    dieses = models.CharField(null=False, blank=False, max_length=18)
     address = models.CharField(null=False, blank=False, max_length=18)
+    
+    date = models.DateTimeField(auto_now=True)
+    dieses = models.CharField(null=False, blank=False, max_length=18)
     symptoms = models.CharField(null=False, blank=False, max_length=18)
-    doctor_name = models.OneToOneField(Doctor, on_delete=models.CASCADE)
+
+    # Field to assign a doctor to the appointment
+
+    assigned_doctors = models.ManyToManyField(Doctor, related_name='appointments')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='Pending')
+
 
     def __str__(self):
-        return self.first_name
+        return f"{self.first_name} {self.last_name} - {self.dieses}"
+
 
 
 

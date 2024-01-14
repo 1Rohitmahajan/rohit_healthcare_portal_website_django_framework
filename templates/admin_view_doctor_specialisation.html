@@ -20,37 +20,45 @@
   </style>
 </head>
 
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h6 class="panel-title">Appointment Approvals Required</h6>
-    </div>
-    <table class="table table-hover" id="dev-table">
-      <thead>
-        <tr>
-          <th>Doctor Name</th>
-          <th>Patient Name</th>
-          <th>Description</th>
-          <th>Date</th>
-          <th>Approve</th>
-          <th>Reject</th>
-        </tr>
-      </thead>
-      {% for a in appointments %}
-      <tr>
-        <td> {{a.doctor}}</td>
-        <td>{{a.name}}</td>
-        <td>{{a.description}}</td>
-        <td>{{a.appointmentDate}}</td>
-        <td><a class="btn btn-primary btn-xs" href="{% url 'approve_appointment' a.id  %}"><span class="glyphicon glyphicon-ok"></span></a></td>
-        <td><a class="btn btn-danger btn-xs" href="{% url 'reject_appointment' a.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
-      </tr>
-      {% endfor %}
-    </table>
-  </div>
-
-
+<div class="form-group">
+  <label for="doctor_name">Doctor Name:</label>
+  <input type="text" name="doctor_name" id="doctor_name" class="form-control" placeholder="Search for Doctor">
+  <ul id="doctor-list"></ul>
+  <input type="hidden" name="doctor_id" id="doctor_id"> <!-- Hidden field to store selected doctor's ID -->
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('#doctor_name').keyup(function () {
+      var inputVal = $(this).val();
+      if (inputVal.length >= 2) {
+          $.ajax({
+              url: '/get_doctor_list/', // Replace with the URL to fetch doctor names
+              method: 'GET',
+              dataType: 'json',
+              success: function (data) {
+                  $('#doctor-list').empty();
+                  data.forEach(function (item) {
+                      if (item.toLowerCase().includes(inputVal.toLowerCase())) {
+                          $('#doctor-list').append('<li>' + item + '</li>');
+                      }
+                  });
+                  $('#doctor-list li').click(function () {
+                      var selectedDoctor = $(this).text();
+                      $('#doctor_name').val(selectedDoctor);
+                      $('#doctor-list').empty();
+                      $('#doctor_id').val(/* Fetch the ID of the selected doctor */);
+                  });
+              }
+          });
+      } else {
+          $('#doctor-list').empty();
+      }
+  });
+});
+</script>
+
 
 
 {% endblock body %}

@@ -76,22 +76,22 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="nav-link dropdown-toggle" type="submit">Search</button>
       </form>
-    </div>
-  </div>
-</nav>
-{% if user.is_authenticated %}
-      <ul class="navbar-nav mr-2">
+      
+      {% if user.is_authenticated %}
+      <ul class="navbar-nav mr-2">  
       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button" data-toggle="dropdown">Welcome {{request.user}}</a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li> <a class="dropdown-item" style="color: springgreen;" href="/logoutuser">Logout</a></li>
+           <li> <a class="dropdown-item" style="color: aqua;" href="/logoutuser">Logout</a></li>
+
       </div>
     </li>
   </ul>
-
-
-    </div>
   {% endif  %}
+    </div>
+  </div>
+</nav>
+
   
 
   {% block body %} {% endblock body %}

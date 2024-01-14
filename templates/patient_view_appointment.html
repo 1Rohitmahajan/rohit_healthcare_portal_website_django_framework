@@ -26,6 +26,7 @@
     <div class="panel-heading">
       <h6 class="panel-title">Appointments</h6>
     </div>
+  
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
@@ -36,11 +37,11 @@
         </tr>
       </thead>
       <tbody>
-      {% for a in p %}
+      {% for a in appointments %}
         
       <tr>
     
-        <td> {{a.doctor_name}}</td>
+        <td> {{a.assigned_doctors}}</td>
         <td>{{a.first_name}}</td>
         <td>{{a.symptoms}}</td>
         <td>{{a.date}}</td>

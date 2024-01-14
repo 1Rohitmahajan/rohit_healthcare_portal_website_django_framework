@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render,reverse, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib.auth import authenticate, login, logout
@@ -6,7 +6,7 @@ from django.contrib.auth import login, logout
 from datetime import datetime
 
 from django.contrib import messages
-from youcare.models import Cont, Doctor, patientappointment, Insurance
+from youcare.models import Cont, Doctor, PatientAppointment, Insurance
 # from youcare.models import Appointment
 # from .models import patient_view
 from .models import Insurance, Register
@@ -76,8 +76,7 @@ def admin_approve_doctor(request):
 def admin_view_doctor_specialisation(request):
     return render(request,'admin_view_doctor_specialisation.html')
 
-def admin_view_doctor(request):
-    return render(request,'admin_view_doctor.html')
+
 
 def register_patient(request):
     return render(request, 'register_patient.html')
@@ -129,7 +128,9 @@ def logoutuser(request):
 
 
 def loginuser(request):
-    if request.method == "POST":
+    if request.user.is_authenticated:
+            return redirect('/appointment_dashboard') 
+    elif request.method == "POST":
         username = request.POST['username']
         password2 = request.POST['password2']
         
@@ -177,54 +178,68 @@ def patient_add_appointment(request):
         symptoms = request.POST.get('symptoms')
         doctor_name = request.POST.get('doctor_name')
 
-        appointment = patientappointment(first_name=first_name, last_name=last_name, phone=phone,
+        appointment = PatientAppointment(first_name=first_name, last_name=last_name, phone=phone,
                                          address=address, date=date, dieses=dieses, age=age, symptoms=symptoms, doctor_name=doctor_name)
         appointment.save()
         messages.success(request, 'appointment saved successfully')
-        
-    return render(request, 'patient_add_appointment.html')
+    doct = Doctor()
+    context = {'doct': doct}    
+    return render(request, 'patient_add_appointment.html',context)
 
+
+from django.shortcuts import render, redirect
+from .forms import DoctorForm
 
 def admin_add_doctor_view(request):
-    if request.method == "POST":
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
-        phone = request.POST.get('phone')
-        date = request.POST.get('date')
-        age = request.POST.get('age')
-        dieses = request.POST.get('dieses')
-        address = request.POST.get('address')
-        symptoms = request.POST.get('symptoms')
-        doctor_name = request.POST.get('doctor_name')
-        department = request.POST.get('department')
+    if request.method == 'POST':
+        form = DoctorForm(request.POST, request.FILES)
+       
+        form.save()
+             # Redirect to doctor list view after successful creation
+    else:
+        form = DoctorForm()  # If GET request, create a new form
 
-        appointment = Doctor(first_name=first_name, last_name=last_name, phone=phone,
-                             department=department, address=address, date=date, dieses=dieses, age=age, symptoms=symptoms, doctor_name=doctor_name)
-        appointment.save()
-        messages.success(request, 'appointment saved successfully')
-        return HttpResponse('admin_add_doctor')
-    return render(request, 'admin_add_doctor.html')
+    return render(request, 'admin_add_doctor.html', {'form': form})
+
+
+
+def admin_view_doctor(request):
+    appointments = Doctor.objects.all()
+    context = {'appointments': appointments}
+    return render(request,'admin_view_doctor.html',context)
+
 
 def patient_approve_appointment(request):
-    p=patientappointment.objects.all()
+    appointments = PatientAppointment.objects.all()
+    context = {'appointments': appointments}
     
-    return render(request, 'patient_approve_appointment.html',p)
+    return render(request, 'patient_approve_appointment.html',context)
 
 
 def patient_view_appointment(request):
-    p=patientappointment.objects.all()
+    appointments = PatientAppointment.objects.all()
+    context = {'appointments': appointments}
+    
+    return render(request, 'patient_view_appointment.html',context)
 
-    data={
-     'p': p
-    }
-    return render(request, 'patient_view_appointment.html',data)
+def approve_appointment(request, appointment_id):
+    appointment = get_object_or_404(PatientAppointment, id=appointment_id)
+    appointment.status = 'Approved'
+    appointment.save()
+    return redirect(reverse('appointment_list'))  # Redirect to the appointment list view after approving
+
+# View for rejecting an appointment
+def reject_appointment(request, appointment_id):
+    appointment = get_object_or_404(PatientAppointment, id=appointment_id)
+    appointment.status = 'Rejected'
+    appointment.save()
+    return redirect(reverse('appointment_list')) 
 
 
+def delete_appointment(request, appointment_id):
+    appointment = get_object_or_404(PatientAppointment, pk=appointment_id)
 
-# def delete_appointment(request, appointment_id):
-#     appointment =(patientappointment, pk=appointment_id)
-
-#     if request.method == 'POST':
-#         appointment.delete()  
-#         return redirect('appointments_list')  
-#     return render(request, 'delete_appointment.html', {'appointment': appointment})
+    if request.method == 'POST':
+        appointment.delete()
+        return redirect('appointments_list')  # Replace 'appointments_list' with your actual URL name
+    return render(request, 'delete_appointment.html', {'appointment': appointment})

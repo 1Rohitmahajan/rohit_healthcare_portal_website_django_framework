@@ -39,6 +39,7 @@ urlpatterns = [
 
 
     path('doctor', views.doctor, name="doctor"),
+   #  path('doctor_list/', views.doctor_list_view, name='doctor_list'),
     path('admin_add__doctor', views.admin_add_doctor_view,
          name="admin_add__doctor"),
 
@@ -48,7 +49,7 @@ urlpatterns = [
          name="patient_add_appointment"),
     
     path('admin_view_doctor_specialisation',views.admin_view_doctor_specialisation,name='admin_view_doctor_specialisation'),
-    path('admin_view_doctor',views.admin_view_doctor,name='admin_view_doctor.html'),
+    path('admin_view_doctor',views.admin_view_doctor,name='admin_view_doctor'),
 
     path('insurance', views.insurance, name="insurance"),
     path('patient_view_appointment',

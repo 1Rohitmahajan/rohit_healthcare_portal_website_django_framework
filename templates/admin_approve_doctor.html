@@ -38,10 +38,10 @@
       </thead>
       {% for a in appointments %}
       <tr>
-        <td> {{a.doctor}}</td>
-        <td>{{a.name}}</td>
-        <td>{{a.description}}</td>
-        <td>{{a.appointmentDate}}</td>
+        <td> {{a.doctor_name}}</td>
+        <td>{{a.address}}</td>
+        <td>{{a.mobile}}</td>
+        <td>{{a.department}}</td>
         <td><a class="btn btn-primary btn-xs" href="{% url 'approve_appointment' a.id  %}"><span class="glyphicon glyphicon-ok"></span></a></td>
         <td><a class="btn btn-danger btn-xs" href="{% url 'reject_appointment' a.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
       </tr>
