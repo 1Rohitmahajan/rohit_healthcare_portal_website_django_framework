@@ -233,8 +233,9 @@ def approve_appointment(request, appointment_id):
 def reject_appointment(request, appointment_id):
     appointment = get_object_or_404(PatientAppointment, id=appointment_id)
     appointment.status = 'Rejected'
+    delete_appointment(request,appointment_id)
     appointment.save()
-    return redirect(reverse('appointment_list')) 
+    return redirect(reverse('patient_approve_appointment')) 
 
 
 def delete_appointment(request, appointment_id):
@@ -242,5 +243,6 @@ def delete_appointment(request, appointment_id):
 
     if request.method == 'POST':
         appointment.delete()
-        return redirect('appointments_list')  # Replace 'appointments_list' with your actual URL name
-    return render(request, 'delete_appointment.html', {'appointment': appointment})
+        return redirect('patient_view_appointment.html')  # Replace 'appointments_list' with your actual URL name
+    return redirect('/appointment_dashboard')
+

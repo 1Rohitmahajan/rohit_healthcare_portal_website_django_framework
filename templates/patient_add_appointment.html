@@ -88,8 +88,8 @@
               <input type="text" name="phone" id="phone" class="form-control" placeholder="Mobile Number" >
             </div>
             <div class="form-group">
-              <label for="doctor_name">Select Doctor(s):</label><br>
-              {% for doctor in doct %}
+              <label for="assigned_doctors">Select Doctor(s):</label><br>
+              {% for doctor in context %}
               <input type="checkbox" id="doctor_{{ doctor.id }}" name="assigned_doctors" value="{{ doctor.id }}">
               <label for="doctor_{{ doctor.id }}">{{ doctor.doctor_name }}</label><br>
               {% endfor %}

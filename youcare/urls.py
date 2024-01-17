@@ -6,7 +6,6 @@ from youcare import views
 urlpatterns = [
     path('', views.index, name="index"),
     
-    
     path('index', views.index, name="index"),
 
     path('about', views.about, name="about"),
@@ -37,7 +36,8 @@ urlpatterns = [
          name="appointment_dashboard"),
     path('patient_approve_appointment',views.patient_approve_appointment,name="patient_approve_appointment"),
 
-
+    path('approve_appointment/<int:appointment_id>/', views.approve_appointment, name='approve_appointment'),
+    path('reject_appointment/<int:appointment_id>/', views.reject_appointment, name='reject_appointment'),
     path('doctor', views.doctor, name="doctor"),
    #  path('doctor_list/', views.doctor_list_view, name='doctor_list'),
     path('admin_add__doctor', views.admin_add_doctor_view,

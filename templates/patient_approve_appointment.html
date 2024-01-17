@@ -25,34 +25,34 @@
     <div class="panel-heading">
       <h6 class="panel-title">Appointment Approvals Required</h6>
     </div>
-    <table class="table table-hover" id="dev-table">
+    <table class="table table-hover center" id="dev-table">
       <thead>
         <tr>
           <th>Doctor Name</th>
           <th>Patient Name</th>
-          <th>Description</th>
+          <th>symptoms</th>
           <th>Date</th>
+          <th>Phone<th>
           <th>Approve</th>
           <th>Reject</th>
           
         </tr>
       </thead>
+      <tbody>
       {% for a in appointments %}
       <tr>
+        <td> {{a.assigned_doctors}}</td>
         <td>{{a.first_name}}</td>
-        <td> {{a.doctor_name}}</td>
         <td>{{a.symptoms}}</td>
         <td>{{a.date}}</td>
-        <td>{{a.description}}</td>
-        <td>{{a.appointmentDate}}</td>
-        <td><a class="btn btn-primary btn-xs" href="{% url 'approve_appointment' a.id  %}"><span class="glyphicon glyphicon-ok"></span></a></td>
+        <td>{{a.phone}}</td>
+        <td class='center'><a class="btn btn-primary btn-xs" href="{% url 'approve_appointment' a.id  %}"><span class="glyphicon glyphicon-ok" ></span></a></td>
         <td><a class="btn btn-danger btn-xs" href="{% url 'reject_appointment' a.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
       </tr>
       {% endfor %}
+    </tbody>
     </table>
   </div>
-
-
 </div>
 
 
