@@ -32,6 +32,7 @@ def dieses(request):
     return render(request, 'dieses.html')
 
 
+
 def insurance(request):
     if request.method == "POST":
         name = request.POST.get('name')

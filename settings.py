@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'youcare.apps.YoucareConfig',
+    'payments',
 
 ]
 
@@ -131,3 +132,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#stripe payments
+STRIPE_SECRET_KEY='sk_test_51OYp7hSI3ewQa1f6IGPymmK9NivFu601FVFvlZpQNlqjw5WHMIVGMXJikpAoGlmOpEhTt5Z6u8dePpLFEVrjdk4y00M46NL20e'
+STRIPE_PUBLISHABLE_KEY='pk_test_51OYp7hSI3ewQa1f6fSmkCoyNDS3eJjlwbU3pmvT5eep245EJ7SCLXABfaZ1BvbfJBSycOKH08NdIfX0UvsdpgF0i00gZqfTxB9'
+
